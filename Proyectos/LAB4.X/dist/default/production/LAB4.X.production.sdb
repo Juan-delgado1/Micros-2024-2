@@ -1,0 +1,99 @@
+[p GLOBOPT AUTOSTATIC LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F4550 ]
+[d frameptr 4065 ]
+"62 D:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 D:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"54 D:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"62 D:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"19 D:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+"4 D:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\lbdiv.c
+[v ___lbdiv __lbdiv `(uc  1 e 1 0 ]
+"4 D:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\lbmod.c
+[v ___lbmod __lbmod `(uc  1 e 1 0 ]
+"7 D:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"7 D:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"10 D:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 3 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 3 0 ]
+"11 D:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 3 0 ]
+"8 D:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 3 0 ]
+"15 D:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 D:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\Umul64.c
+[v ___omul __omul `(ul  1 e 4 0 ]
+"15 D:\MateriasUNAL\Microcontroladores\Micros-2024-2\Proyectos\LAB4.X\LAB4.c
+[v _main main `(v  1 e 1 0 ]
+"96
+[v _ISR ISR `II(v  1 e 1 0 ]
+"59 D:\MateriasUNAL\Microcontroladores\Micros-2024-2\Proyectos\LAB4.X\LibLCDXC8.h
+[v _EnviaDato EnviaDato `(v  1 e 1 0 ]
+"105
+[v _HabilitaLCD HabilitaLCD `(v  1 e 1 0 ]
+"112
+[v _BorraLCD BorraLCD `(v  1 e 1 0 ]
+"119
+[v _CursorAInicio CursorAInicio `(v  1 e 1 0 ]
+"136
+[v _EscribeLCD_c EscribeLCD_c `(v  1 e 1 0 ]
+"270
+[v _RetardoLCD RetardoLCD `(v  1 e 1 0 ]
+"2453 D:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4550.h
+[v _PORTB PORTB `VEuc  1 e 1 @3969 ]
+"3073
+[v _LATB LATB `VEuc  1 e 1 @3978 ]
+"3263
+[v _LATD LATD `VEuc  1 e 1 @3980 ]
+"3625
+[v _TRISB TRISB `VEuc  1 e 1 @3987 ]
+"4001
+[v _TRISD TRISD `VEuc  1 e 1 @3989 ]
+"8139
+[v _TMR0 TMR0 `VEus  1 e 2 @4054 ]
+"9745
+[v _GIE GIE `VEb  1 e 0 @32663 ]
+"9991
+[v _LATD0 LATD0 `VEb  1 e 0 @31840 ]
+"9994
+[v _LATD1 LATD1 `VEb  1 e 0 @31841 ]
+"10375
+[v _RB4 RB4 `VEb  1 e 0 @31756 ]
+"10378
+[v _RB5 RB5 `VEb  1 e 0 @31757 ]
+"10381
+[v _RB6 RB6 `VEb  1 e 0 @31758 ]
+"10384
+[v _RB7 RB7 `VEb  1 e 0 @31759 ]
+"10387
+[v _RBIE RBIE `VEb  1 e 0 @32659 ]
+"10390
+[v _RBIF RBIF `VEb  1 e 0 @32656 ]
+"10396
+[v _RBPU RBPU `VEb  1 e 0 @32655 ]
+"10819
+[v _TMR0IF TMR0IF `VEb  1 e 0 @32658 ]
+"10 D:\MateriasUNAL\Microcontroladores\Micros-2024-2\Proyectos\LAB4.X\LAB4.c
+[v _Tecla Tecla `uc  1 e 1 0 ]
+"15
+[v _main main `(v  1 e 1 0 ]
+{
+"16
+[v main@i i `uc  1 a 1 2 ]
+"71
+} 0
+"96
+[v _ISR ISR `II(v  1 e 1 0 ]
+{
+"136
+} 0
