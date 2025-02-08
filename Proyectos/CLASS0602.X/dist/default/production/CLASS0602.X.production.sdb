@@ -1,0 +1,70 @@
+[p GLOBOPT AUTOSTATIC LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F4550 ]
+[d frameptr 4065 ]
+"8 C:\Users\Asus TUF\OneDrive\Escritorio\MPLABXProjects\CLASS0602.X\CLASS0602.c
+[v _main main `(v  1 e 1 0 ]
+"37
+[v _transmitir transmitir `(v  1 e 1 0 ]
+"62 D:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 D:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"54 D:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"62 D:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"19 D:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+"10 D:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 3 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 3 0 ]
+"11 D:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 3 0 ]
+"8 D:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 3 0 ]
+"15 D:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 D:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\Umul64.c
+[v ___omul __omul `(ul  1 e 4 0 ]
+"2973 D:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4550.h
+[v _LATA LATA `VEuc  1 e 1 @3977 ]
+"3263
+[v _LATD LATD `VEuc  1 e 1 @3980 ]
+"3427
+[v _TRISA TRISA `VEuc  1 e 1 @3986 ]
+"4001
+[v _TRISD TRISD `VEuc  1 e 1 @3989 ]
+"4936
+[v _RCSTA RCSTA `VEuc  1 e 1 @4011 ]
+"5146
+[v _TXSTA TXSTA `VEuc  1 e 1 @4012 ]
+"5402
+[v _TXREG TXREG `VEuc  1 e 1 @4013 ]
+"5426
+[v _SPBRG SPBRG `VEuc  1 e 1 @4015 ]
+"6062
+[v _BAUDCON BAUDCON `VEuc  1 e 1 @4024 ]
+"6510
+[v _ADCON2 ADCON2 `VEuc  1 e 1 @4032 ]
+"6581
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @4033 ]
+"6666
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @4034 ]
+"10978
+[v _TRMT TRMT `VEb  1 e 0 @32097 ]
+"8 C:\Users\Asus TUF\OneDrive\Escritorio\MPLABXProjects\CLASS0602.X\CLASS0602.c
+[v _main main `(v  1 e 1 0 ]
+{
+"30
+} 0
+"37
+[v _transmitir transmitir `(v  1 e 1 0 ]
+{
+[v transmitir@BufferT BufferT `uc  1 p 1 wreg ]
+[v transmitir@BufferT BufferT `uc  1 p 1 wreg ]
+[v transmitir@BufferT BufferT `uc  1 p 1 0 ]
+"40
+} 0
