@@ -1,0 +1,115 @@
+[p GLOBOPT AUTOSTATIC LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F4550 ]
+[d frameptr 4065 ]
+"62 D:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 D:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"54 D:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"62 D:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"19 D:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+"10 D:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 3 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 3 0 ]
+"11 D:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 3 0 ]
+"8 D:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 3 0 ]
+"15 D:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 D:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\Umul64.c
+[v ___omul __omul `(ul  1 e 4 0 ]
+"19 C:\Users\Asus TUF\OneDrive\Escritorio\MPLABXProjects\LAB3INTENTO3.X\LAB3INTENTO3.c
+[v _main main `(v  1 e 1 0 ]
+"102
+[v _ISR ISR `IIH(v  1 e 1 0 ]
+"2973 D:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4550.h
+[v _LATA LATA `VEuc  1 e 1 @3977 ]
+"3263
+[v _LATD LATD `VEuc  1 e 1 @3980 ]
+"3375
+[v _LATE LATE `VEuc  1 e 1 @3981 ]
+"3427
+[v _TRISA TRISA `VEuc  1 e 1 @3986 ]
+"3625
+[v _TRISB TRISB `VEuc  1 e 1 @3987 ]
+"4001
+[v _TRISD TRISD `VEuc  1 e 1 @3989 ]
+"4223
+[v _TRISE TRISE `VEuc  1 e 1 @3990 ]
+"8069
+[v _T0CON T0CON `VEuc  1 e 1 @4053 ]
+"8139
+[v _TMR0 TMR0 `VEus  1 e 2 @4054 ]
+"9745
+[v _GIE GIE `VEb  1 e 0 @32663 ]
+"9772
+[v _HLVDEN HLVDEN `VEb  1 e 0 @32404 ]
+"9778
+[v _HLVDIF HLVDIF `VEb  1 e 0 @32010 ]
+"9787
+[v _HLVDL0 HLVDL0 `VEb  1 e 0 @32400 ]
+"9790
+[v _HLVDL1 HLVDL1 `VEb  1 e 0 @32401 ]
+"9793
+[v _HLVDL2 HLVDL2 `VEb  1 e 0 @32402 ]
+"9796
+[v _HLVDL3 HLVDL3 `VEb  1 e 0 @32403 ]
+"9829
+[v _INT0IE INT0IE `VEb  1 e 0 @32660 ]
+"9832
+[v _INT0IF INT0IF `VEb  1 e 0 @32657 ]
+"9844
+[v _INT1IE INT1IE `VEb  1 e 0 @32643 ]
+"9847
+[v _INT1IF INT1IF `VEb  1 e 0 @32640 ]
+"9865
+[v _INT2IE INT2IE `VEb  1 e 0 @32644 ]
+"9868
+[v _INT2IF INT2IF `VEb  1 e 0 @32641 ]
+"9877
+[v _INTEDG0 INTEDG0 `VEb  1 e 0 @32654 ]
+"9880
+[v _INTEDG1 INTEDG1 `VEb  1 e 0 @32653 ]
+"9883
+[v _INTEDG2 INTEDG2 `VEb  1 e 0 @32652 ]
+"9961
+[v _LATB3 LATB3 `VEb  1 e 0 @31827 ]
+"10012
+[v _LATD7 LATD7 `VEb  1 e 0 @31847 ]
+"10363
+[v _RB0 RB0 `VEb  1 e 0 @31752 ]
+"10366
+[v _RB1 RB1 `VEb  1 e 0 @31753 ]
+"10369
+[v _RB2 RB2 `VEb  1 e 0 @31754 ]
+"10516
+[v _RI RI `VEb  1 e 0 @32388 ]
+"10816
+[v _TMR0IE TMR0IE `VEb  1 e 0 @32661 ]
+"10819
+[v _TMR0IF TMR0IF `VEb  1 e 0 @32658 ]
+"10825
+[v _TMR0ON TMR0ON `VEb  1 e 0 @32431 ]
+"11113
+[v _VDIRMAG VDIRMAG `VEb  1 e 0 @32407 ]
+"12 C:\Users\Asus TUF\OneDrive\Escritorio\MPLABXProjects\LAB3INTENTO3.X\LAB3INTENTO3.c
+[v _contador contador `uc  1 e 1 0 ]
+"13
+[v _countD countD `uc  1 e 1 0 ]
+"19
+[v _main main `(v  1 e 1 0 ]
+{
+"99
+} 0
+"102
+[v _ISR ISR `IIH(v  1 e 1 0 ]
+{
+"265
+} 0
