@@ -3,7 +3,7 @@ include P18F4550.inc
 CONFIG FOSC = EC_EC	; Reloj Externo
 CONFIG WDT = OFF	; Perro Guardian
 CONFIG LVP = OFF	; Funcionamiento en Bajo Voltaje
-CONFIG PBADEN = OFF	 ;Desactivar funciones anal骻icas
+CONFIG PBADEN = OFF	 ;Desactivar funciones anal贸gicas
   
 aux1 equ 0h
 aux2 equ 1h
@@ -14,7 +14,7 @@ var1 equ 2h
 ORG 0h   ; que hace si se reinicia el microcontrolador, no es necesario solo si se usan interrupciones
  goto Inicio
  
-ORG 8h   ; que hacer si hay una interrupci髇
+ORG 8h   ; que hacer si hay una interrupci贸n
  goto ISR
 
 Inicio
@@ -25,7 +25,7 @@ Inicio
   bsf INTCON2, INTEDG0 ; Definir flanco subida
   bcf INTCON,1  ; Borrar bandera => borro en el registro intcon el pin 1 (INT0IF)   ===  bcf INTCON, INT01F
   bsf INTCON, INT0IE  ; Habilitar la interrupcion local  bit4
-  bsf INTCON, GIE     ; Habilitaci髇 global interrupciones bit 7
+  bsf INTCON, GIE     ; Habilitaci贸n global interrupciones bit 7
   
 Menu   
    ;0 verde, 1 rojo, 2 azul
@@ -75,7 +75,7 @@ Menu
    
 ISR
   bcf INTCON, INT0IF	; [1]    Desactivar Bandera
-  btfsc PORTB,0		; [1] o [3]  Si es 0 salta la siguiente instrucci髇
+  btfsc PORTB,0		; [1] o [3]  Si es 0 salta la siguiente instrucci贸n
   goto ISR		; [2]
   retfie		; [2]    Salir de la interrupcion
   ; Al desactivar el interruptor, para volver a su ciclo principal, demorara entre 6 y 10 ciclos de bus
