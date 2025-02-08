@@ -1,0 +1,5 @@
+Warning[205] C:\USERS\ASUS TUF\MPLABXPROJECTS\LAB1.X\LAB1.ASM 2 : Found directive in column 1. (include)
+Error[150]   C:\USERS\ASUS TUF\MPLABXPROJECTS\LAB1.X\LAB1.ASM 11 : Labels must be defined in a code or data section when making an object file
+Error[152]   C:\USERS\ASUS TUF\MPLABXPROJECTS\LAB1.X\LAB1.ASM 13 : Executable code and data must be defined in an appropriate section
+Error[152]   C:\USERS\ASUS TUF\MPLABXPROJECTS\LAB1.X\LAB1.ASM 14 : Executable code and data must be defined in an appropriate section
+Warning[205] C:\USERS\ASUS TUF\MPLABXPROJECTS\LAB1.X\LAB1.ASM 15 : Found directive in column 1. (end)

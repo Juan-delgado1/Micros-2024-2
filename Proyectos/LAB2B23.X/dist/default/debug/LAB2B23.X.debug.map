@@ -1,0 +1,49 @@
+MPLINK 5.08, LINKER
+Linker Map File - Created Wed Dec 04 19:31:50 2024
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+                   .org_0       code   0x000000    program   0x000004
+                   .cinit    romdata   0x000004    program   0x000002
+                   .org_1       code   0x000008    program   0x0000a8
+.config_300001_BUILD/DEFAULT/DEBUG/LAB1B23.O    romdata   0x300001    program   0x000001
+.config_300003_BUILD/DEFAULT/DEBUG/LAB1B23.O    romdata   0x300003    program   0x000001
+.config_300005_BUILD/DEFAULT/DEBUG/LAB1B23.O    romdata   0x300005    program   0x000001
+.config_300006_BUILD/DEFAULT/DEBUG/LAB1B23.O    romdata   0x300006    program   0x000001
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x000005      
+                            0x000008    0x0000af      
+                            0x300001    0x300001      
+                            0x300003    0x300003      
+                            0x300005    0x300006      
+            178 out of 33048 program addresses used, program memory utilization is 0%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+               AuxRetardo   0x0000a0    program     static C:\Users\Asus TUF\OneDrive\Escritorio\MPLABXProjects\LAB2B23.X\LAB1B23.asm
+                      ISR   0x00008c    program     static C:\Users\Asus TUF\OneDrive\Escritorio\MPLABXProjects\LAB2B23.X\LAB1B23.asm
+                   Inicio   0x00000c    program     static C:\Users\Asus TUF\OneDrive\Escritorio\MPLABXProjects\LAB2B23.X\LAB1B23.asm
+                     Menu   0x00001a    program     static C:\Users\Asus TUF\OneDrive\Escritorio\MPLABXProjects\LAB2B23.X\LAB1B23.asm
+                  Retardo   0x000098    program     static C:\Users\Asus TUF\OneDrive\Escritorio\MPLABXProjects\LAB2B23.X\LAB1B23.asm
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                   Inicio   0x00000c    program     static C:\Users\Asus TUF\OneDrive\Escritorio\MPLABXProjects\LAB2B23.X\LAB1B23.asm
+                     Menu   0x00001a    program     static C:\Users\Asus TUF\OneDrive\Escritorio\MPLABXProjects\LAB2B23.X\LAB1B23.asm
+                      ISR   0x00008c    program     static C:\Users\Asus TUF\OneDrive\Escritorio\MPLABXProjects\LAB2B23.X\LAB1B23.asm
+                  Retardo   0x000098    program     static C:\Users\Asus TUF\OneDrive\Escritorio\MPLABXProjects\LAB2B23.X\LAB1B23.asm
+               AuxRetardo   0x0000a0    program     static C:\Users\Asus TUF\OneDrive\Escritorio\MPLABXProjects\LAB2B23.X\LAB1B23.asm
+
+

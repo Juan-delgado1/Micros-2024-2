@@ -1,0 +1,26 @@
+Warning[205] C:\USERS\ASUS TUF\ONEDRIVE\ESCRITORIO\MPLABXPROJECTS\LAB2B1.X\LAB2B1.ASM 1 : Found directive in column 1. (include)
+Warning[205] C:\USERS\ASUS TUF\ONEDRIVE\ESCRITORIO\MPLABXPROJECTS\LAB2B1.X\LAB2B1.ASM 3 : Found directive in column 1. (CONFIG)
+Warning[205] C:\USERS\ASUS TUF\ONEDRIVE\ESCRITORIO\MPLABXPROJECTS\LAB2B1.X\LAB2B1.ASM 4 : Found directive in column 1. (CONFIG)
+Warning[205] C:\USERS\ASUS TUF\ONEDRIVE\ESCRITORIO\MPLABXPROJECTS\LAB2B1.X\LAB2B1.ASM 5 : Found directive in column 1. (CONFIG)
+Warning[203] C:\USERS\ASUS TUF\ONEDRIVE\ESCRITORIO\MPLABXPROJECTS\LAB2B1.X\LAB2B1.ASM 8 : Found opcode in column 1. (clrf)
+Error[152]   C:\USERS\ASUS TUF\ONEDRIVE\ESCRITORIO\MPLABXPROJECTS\LAB2B1.X\LAB2B1.ASM 8 : Executable code and data must be defined in an appropriate section
+Warning[203] C:\USERS\ASUS TUF\ONEDRIVE\ESCRITORIO\MPLABXPROJECTS\LAB2B1.X\LAB2B1.ASM 12 : Found opcode in column 1. (clrf)
+Error[152]   C:\USERS\ASUS TUF\ONEDRIVE\ESCRITORIO\MPLABXPROJECTS\LAB2B1.X\LAB2B1.ASM 12 : Executable code and data must be defined in an appropriate section
+Warning[203] C:\USERS\ASUS TUF\ONEDRIVE\ESCRITORIO\MPLABXPROJECTS\LAB2B1.X\LAB2B1.ASM 13 : Found opcode in column 1. (bsf)
+Error[152]   C:\USERS\ASUS TUF\ONEDRIVE\ESCRITORIO\MPLABXPROJECTS\LAB2B1.X\LAB2B1.ASM 13 : Executable code and data must be defined in an appropriate section
+Warning[203] C:\USERS\ASUS TUF\ONEDRIVE\ESCRITORIO\MPLABXPROJECTS\LAB2B1.X\LAB2B1.ASM 14 : Found opcode in column 1. (bsf)
+Error[152]   C:\USERS\ASUS TUF\ONEDRIVE\ESCRITORIO\MPLABXPROJECTS\LAB2B1.X\LAB2B1.ASM 14 : Executable code and data must be defined in an appropriate section
+Warning[203] C:\USERS\ASUS TUF\ONEDRIVE\ESCRITORIO\MPLABXPROJECTS\LAB2B1.X\LAB2B1.ASM 15 : Found opcode in column 1. (bcf)
+Error[152]   C:\USERS\ASUS TUF\ONEDRIVE\ESCRITORIO\MPLABXPROJECTS\LAB2B1.X\LAB2B1.ASM 15 : Executable code and data must be defined in an appropriate section
+Warning[203] C:\USERS\ASUS TUF\ONEDRIVE\ESCRITORIO\MPLABXPROJECTS\LAB2B1.X\LAB2B1.ASM 16 : Found opcode in column 1. (bsf)
+Error[152]   C:\USERS\ASUS TUF\ONEDRIVE\ESCRITORIO\MPLABXPROJECTS\LAB2B1.X\LAB2B1.ASM 16 : Executable code and data must be defined in an appropriate section
+Warning[203] C:\USERS\ASUS TUF\ONEDRIVE\ESCRITORIO\MPLABXPROJECTS\LAB2B1.X\LAB2B1.ASM 17 : Found opcode in column 1. (bsf)
+Error[152]   C:\USERS\ASUS TUF\ONEDRIVE\ESCRITORIO\MPLABXPROJECTS\LAB2B1.X\LAB2B1.ASM 17 : Executable code and data must be defined in an appropriate section
+Warning[203] C:\USERS\ASUS TUF\ONEDRIVE\ESCRITORIO\MPLABXPROJECTS\LAB2B1.X\LAB2B1.ASM 18 : Found opcode in column 1. (bcf)
+Error[152]   C:\USERS\ASUS TUF\ONEDRIVE\ESCRITORIO\MPLABXPROJECTS\LAB2B1.X\LAB2B1.ASM 18 : Executable code and data must be defined in an appropriate section
+Warning[203] C:\USERS\ASUS TUF\ONEDRIVE\ESCRITORIO\MPLABXPROJECTS\LAB2B1.X\LAB2B1.ASM 19 : Found opcode in column 1. (bcf)
+Error[152]   C:\USERS\ASUS TUF\ONEDRIVE\ESCRITORIO\MPLABXPROJECTS\LAB2B1.X\LAB2B1.ASM 19 : Executable code and data must be defined in an appropriate section
+Warning[203] C:\USERS\ASUS TUF\ONEDRIVE\ESCRITORIO\MPLABXPROJECTS\LAB2B1.X\LAB2B1.ASM 20 : Found opcode in column 1. (goto)
+Error[152]   C:\USERS\ASUS TUF\ONEDRIVE\ESCRITORIO\MPLABXPROJECTS\LAB2B1.X\LAB2B1.ASM 20 : Executable code and data must be defined in an appropriate section
+Error[152]   C:\USERS\ASUS TUF\ONEDRIVE\ESCRITORIO\MPLABXPROJECTS\LAB2B1.X\LAB2B1.ASM 20 : Executable code and data must be defined in an appropriate section
+Error[129]   C:\USERS\ASUS TUF\ONEDRIVE\ESCRITORIO\MPLABXPROJECTS\LAB2B1.X\LAB2B1.ASM 24 : Expected (END)
