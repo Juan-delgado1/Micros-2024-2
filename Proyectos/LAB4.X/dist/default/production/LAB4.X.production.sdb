@@ -15,8 +15,10 @@
 [v ___ftsub __ftsub `(f  1 e 3 0 ]
 "4 D:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\lbdiv.c
 [v ___lbdiv __lbdiv `(uc  1 e 1 0 ]
+[v i2___lbdiv __lbdiv `(uc  1 e 1 0 ]
 "4 D:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\lbmod.c
 [v ___lbmod __lbmod `(uc  1 e 1 0 ]
+[v i2___lbmod __lbmod `(uc  1 e 1 0 ]
 "7 D:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\lwdiv.c
 [v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
 "7 D:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\lwmod.c
@@ -33,40 +35,76 @@
 [v ___lmul __lmul `(ul  1 e 4 0 ]
 "91 D:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\Umul64.c
 [v ___omul __omul `(ul  1 e 4 0 ]
-"15 D:\MateriasUNAL\Microcontroladores\Micros-2024-2\Proyectos\LAB4.X\LAB4.c
+"22 D:\MateriasUNAL\Microcontroladores\Micros-2024-2\Proyectos\LAB4.X\LAB4.c
 [v _main main `(v  1 e 1 0 ]
-"96
-[v _ISR ISR `II(v  1 e 1 0 ]
-"59 D:\MateriasUNAL\Microcontroladores\Micros-2024-2\Proyectos\LAB4.X\LibLCDXC8.h
+"116
+[v _ISR ISR `IIH(v  1 e 1 0 ]
+"56 D:\MateriasUNAL\Microcontroladores\Micros-2024-2\Proyectos\LAB4.X\LibLCDXC8.h
+[v _ConfiguraLCD ConfiguraLCD `(v  1 e 1 0 ]
+"60
 [v _EnviaDato EnviaDato `(v  1 e 1 0 ]
-"105
+[v i2_EnviaDato EnviaDato `(v  1 e 1 0 ]
+"72
+[v _InicializaLCD InicializaLCD `(v  1 e 1 0 ]
+"106
 [v _HabilitaLCD HabilitaLCD `(v  1 e 1 0 ]
-"112
+[v i2_HabilitaLCD HabilitaLCD `(v  1 e 1 0 ]
+"113
 [v _BorraLCD BorraLCD `(v  1 e 1 0 ]
-"119
+"120
 [v _CursorAInicio CursorAInicio `(v  1 e 1 0 ]
-"136
+"124
+[v _ComandoLCD ComandoLCD `(v  1 e 1 0 ]
+"137
 [v _EscribeLCD_c EscribeLCD_c `(v  1 e 1 0 ]
-"270
+[v i2_EscribeLCD_c EscribeLCD_c `(v  1 e 1 0 ]
+"146
+[v _EscribeLCD_n8 EscribeLCD_n8 `(v  1 e 1 0 ]
+[v i2_EscribeLCD_n8 EscribeLCD_n8 `(v  1 e 1 0 ]
+"233
+[v _MensajeLCD_Var MensajeLCD_Var `(v  1 e 1 0 ]
+[v i2_MensajeLCD_Var MensajeLCD_Var `(v  1 e 1 0 ]
+"244
+[v _DireccionaLCD DireccionaLCD `(v  1 e 1 0 ]
+"284
 [v _RetardoLCD RetardoLCD `(v  1 e 1 0 ]
+[v i2_RetardoLCD RetardoLCD `(v  1 e 1 0 ]
 "2453 D:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4550.h
 [v _PORTB PORTB `VEuc  1 e 1 @3969 ]
+"2973
+[v _LATA LATA `VEuc  1 e 1 @3977 ]
 "3073
 [v _LATB LATB `VEuc  1 e 1 @3978 ]
 "3263
 [v _LATD LATD `VEuc  1 e 1 @3980 ]
+"3375
+[v _LATE LATE `VEuc  1 e 1 @3981 ]
+"3427
+[v _TRISA TRISA `VEuc  1 e 1 @3986 ]
 "3625
 [v _TRISB TRISB `VEuc  1 e 1 @3987 ]
+"3847
+[v _TRISC TRISC `VEuc  1 e 1 @3988 ]
 "4001
 [v _TRISD TRISD `VEuc  1 e 1 @3989 ]
+"4223
+[v _TRISE TRISE `VEuc  1 e 1 @3990 ]
+"6581
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @4033 ]
+"8069
+[v _T0CON T0CON `VEuc  1 e 1 @4053 ]
 "8139
 [v _TMR0 TMR0 `VEus  1 e 2 @4054 ]
 "9745
 [v _GIE GIE `VEb  1 e 0 @32663 ]
-"9991
-[v _LATD0 LATD0 `VEb  1 e 0 @31840 ]
-"9994
-[v _LATD1 LATD1 `VEb  1 e 0 @31841 ]
+"9934
+[v _LATA1 LATA1 `VEb  1 e 0 @31817 ]
+"9940
+[v _LATA3 LATA3 `VEb  1 e 0 @31819 ]
+"9943
+[v _LATA4 LATA4 `VEb  1 e 0 @31820 ]
+"9946
+[v _LATA5 LATA5 `VEb  1 e 0 @31821 ]
 "10375
 [v _RB4 RB4 `VEb  1 e 0 @31756 ]
 "10378
@@ -81,19 +119,232 @@
 [v _RBIF RBIF `VEb  1 e 0 @32656 ]
 "10396
 [v _RBPU RBPU `VEb  1 e 0 @32655 ]
+"10399
+[v _RC0 RC0 `VEb  1 e 0 @31760 ]
+"10816
+[v _TMR0IE TMR0IE `VEb  1 e 0 @32661 ]
 "10819
 [v _TMR0IF TMR0IF `VEb  1 e 0 @32658 ]
+"10825
+[v _TMR0ON TMR0ON `VEb  1 e 0 @32431 ]
 "10 D:\MateriasUNAL\Microcontroladores\Micros-2024-2\Proyectos\LAB4.X\LAB4.c
 [v _Tecla Tecla `uc  1 e 1 0 ]
+"11
+[v _aux aux `[1]*.31uc  1 e 1 0 ]
+"13
+[v _PARO PARO `[1]*.31uc  1 e 1 0 ]
+"14
+[v _SUPR SUPR `[1]*.31uc  1 e 1 0 ]
 "15
+[v _FIN FIN `[1]*.31uc  1 e 1 0 ]
+"16
+[v _objetivo objetivo `uc  1 e 1 0 ]
+"17
+[v _faltantes faltantes `uc  1 e 1 0 ]
+"18
+[v _contadas contadas `uc  1 e 1 0 ]
+"19
+[v _input input `uc  1 e 1 0 ]
+"20
+[v _ok ok `uc  1 e 1 0 ]
+"35 D:\MateriasUNAL\Microcontroladores\Micros-2024-2\Proyectos\LAB4.X\LibLCDXC8.h
+[v _interfaz interfaz `uc  1 e 1 0 ]
+"22 D:\MateriasUNAL\Microcontroladores\Micros-2024-2\Proyectos\LAB4.X\LAB4.c
 [v _main main `(v  1 e 1 0 ]
 {
-"16
-[v main@i i `uc  1 a 1 2 ]
+"112
+} 0
+"233 D:\MateriasUNAL\Microcontroladores\Micros-2024-2\Proyectos\LAB4.X\LibLCDXC8.h
+[v _MensajeLCD_Var MensajeLCD_Var `(v  1 e 1 0 ]
+{
+[v MensajeLCD_Var@a a `*.31uc  1 p 1 25 ]
+"243
+} 0
+"137
+[v _EscribeLCD_c EscribeLCD_c `(v  1 e 1 0 ]
+{
+[v EscribeLCD_c@a a `uc  1 p 1 wreg ]
+[v EscribeLCD_c@a a `uc  1 p 1 wreg ]
+"141
+[v EscribeLCD_c@a a `uc  1 p 1 24 ]
+"145
+} 0
+"72
+[v _InicializaLCD InicializaLCD `(v  1 e 1 0 ]
+{
+"105
+} 0
+"113
+[v _BorraLCD BorraLCD `(v  1 e 1 0 ]
+{
+"119
+} 0
+"146
+[v _EscribeLCD_n8 EscribeLCD_n8 `(v  1 e 1 0 ]
+{
+[v EscribeLCD_n8@a a `uc  1 p 1 wreg ]
+"151
+[v EscribeLCD_n8@unidad unidad `uc  1 a 1 31 ]
+[v EscribeLCD_n8@decena decena `uc  1 a 1 30 ]
+[v EscribeLCD_n8@centena centena `uc  1 a 1 29 ]
+"146
+[v EscribeLCD_n8@a a `uc  1 p 1 wreg ]
+[v EscribeLCD_n8@b b `uc  1 p 1 28 ]
+"152
+[v EscribeLCD_n8@a a `uc  1 p 1 32 ]
+"183
+} 0
+"4 D:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\lbmod.c
+[v ___lbmod __lbmod `(uc  1 e 1 0 ]
+{
+[v ___lbmod@dividend dividend `uc  1 p 1 wreg ]
+"6
+[v ___lbmod@rem rem `uc  1 a 1 23 ]
+"7
+[v ___lbmod@counter counter `uc  1 a 1 22 ]
+"4
+[v ___lbmod@dividend dividend `uc  1 p 1 wreg ]
+[v ___lbmod@divisor divisor `uc  1 p 1 20 ]
+"9
+[v ___lbmod@dividend dividend `uc  1 p 1 21 ]
+"18
+} 0
+"4 D:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\lbdiv.c
+[v ___lbdiv __lbdiv `(uc  1 e 1 0 ]
+{
+[v ___lbdiv@dividend dividend `uc  1 p 1 wreg ]
+"6
+[v ___lbdiv@quotient quotient `uc  1 a 1 27 ]
+"7
+[v ___lbdiv@counter counter `uc  1 a 1 26 ]
+"4
+[v ___lbdiv@dividend dividend `uc  1 p 1 wreg ]
+[v ___lbdiv@divisor divisor `uc  1 p 1 24 ]
+"9
+[v ___lbdiv@dividend dividend `uc  1 p 1 25 ]
+"26
+} 0
+"244 D:\MateriasUNAL\Microcontroladores\Micros-2024-2\Proyectos\LAB4.X\LibLCDXC8.h
+[v _DireccionaLCD DireccionaLCD `(v  1 e 1 0 ]
+{
+[v DireccionaLCD@a a `uc  1 p 1 wreg ]
+[v DireccionaLCD@a a `uc  1 p 1 wreg ]
+"247
+[v DireccionaLCD@a a `uc  1 p 1 24 ]
+"251
+} 0
+"60
+[v _EnviaDato EnviaDato `(v  1 e 1 0 ]
+{
+[v EnviaDato@a a `uc  1 p 1 wreg ]
+[v EnviaDato@a a `uc  1 p 1 wreg ]
+[v EnviaDato@a a `uc  1 p 1 23 ]
 "71
 } 0
-"96
-[v _ISR ISR `II(v  1 e 1 0 ]
+"284
+[v _RetardoLCD RetardoLCD `(v  1 e 1 0 ]
 {
-"136
+[v RetardoLCD@a a `uc  1 p 1 wreg ]
+[v RetardoLCD@a a `uc  1 p 1 wreg ]
+[v RetardoLCD@a a `uc  1 p 1 21 ]
+"302
+} 0
+"106
+[v _HabilitaLCD HabilitaLCD `(v  1 e 1 0 ]
+{
+"112
+} 0
+"56
+[v _ConfiguraLCD ConfiguraLCD `(v  1 e 1 0 ]
+{
+[v ConfiguraLCD@a a `uc  1 p 1 wreg ]
+[v ConfiguraLCD@a a `uc  1 p 1 wreg ]
+[v ConfiguraLCD@a a `uc  1 p 1 20 ]
+"59
+} 0
+"116 D:\MateriasUNAL\Microcontroladores\Micros-2024-2\Proyectos\LAB4.X\LAB4.c
+[v _ISR ISR `IIH(v  1 e 1 0 ]
+{
+"257
+} 0
+"233 D:\MateriasUNAL\Microcontroladores\Micros-2024-2\Proyectos\LAB4.X\LibLCDXC8.h
+[v i2_MensajeLCD_Var MensajeLCD_Var `(v  1 e 1 0 ]
+{
+[v i2MensajeLCD_Var@a a `*.31uc  1 p 1 5 ]
+"243
+} 0
+"137
+[v i2_EscribeLCD_c EscribeLCD_c `(v  1 e 1 0 ]
+{
+[v i2EscribeLCD_c@a a `uc  1 p 1 wreg ]
+[v i2EscribeLCD_c@a a `uc  1 p 1 wreg ]
+"141
+[v i2EscribeLCD_c@a a `uc  1 p 1 4 ]
+"145
+} 0
+"146
+[v i2_EscribeLCD_n8 EscribeLCD_n8 `(v  1 e 1 0 ]
+{
+[v i2EscribeLCD_n8@a a `uc  1 p 1 wreg ]
+"151
+[v i2EscribeLCD_n8@unidad unidad `uc  1 a 1 11 ]
+[v i2EscribeLCD_n8@decena decena `uc  1 a 1 10 ]
+[v i2EscribeLCD_n8@centena centena `uc  1 a 1 9 ]
+"146
+[v i2EscribeLCD_n8@a a `uc  1 p 1 wreg ]
+[v i2EscribeLCD_n8@b b `uc  1 p 1 8 ]
+"152
+[v i2EscribeLCD_n8@a a `uc  1 p 1 12 ]
+"183
+} 0
+"4 D:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\lbmod.c
+[v i2___lbmod __lbmod `(uc  1 e 1 0 ]
+{
+[v i2___lbmod@dividend dividend `uc  1 p 1 wreg ]
+"6
+[v i2___lbmod@rem rem `uc  1 a 1 3 ]
+"7
+[v i2___lbmod@counter counter `uc  1 a 1 2 ]
+"4
+[v i2___lbmod@dividend dividend `uc  1 p 1 wreg ]
+[v i2___lbmod@divisor divisor `uc  1 p 1 0 ]
+"9
+[v i2___lbmod@dividend dividend `uc  1 p 1 1 ]
+"18
+} 0
+"4 D:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\lbdiv.c
+[v i2___lbdiv __lbdiv `(uc  1 e 1 0 ]
+{
+[v i2___lbdiv@dividend dividend `uc  1 p 1 wreg ]
+"6
+[v i2___lbdiv@quotient quotient `uc  1 a 1 7 ]
+"7
+[v i2___lbdiv@counter counter `uc  1 a 1 6 ]
+"4
+[v i2___lbdiv@dividend dividend `uc  1 p 1 wreg ]
+[v i2___lbdiv@divisor divisor `uc  1 p 1 4 ]
+"9
+[v i2___lbdiv@dividend dividend `uc  1 p 1 5 ]
+"26
+} 0
+"60 D:\MateriasUNAL\Microcontroladores\Micros-2024-2\Proyectos\LAB4.X\LibLCDXC8.h
+[v i2_EnviaDato EnviaDato `(v  1 e 1 0 ]
+{
+[v i2EnviaDato@a a `uc  1 p 1 wreg ]
+[v i2EnviaDato@a a `uc  1 p 1 wreg ]
+[v i2EnviaDato@a a `uc  1 p 1 3 ]
+"71
+} 0
+"284
+[v i2_RetardoLCD RetardoLCD `(v  1 e 1 0 ]
+{
+[v i2RetardoLCD@a a `uc  1 p 1 wreg ]
+[v i2RetardoLCD@a a `uc  1 p 1 wreg ]
+[v i2RetardoLCD@a a `uc  1 p 1 1 ]
+"302
+} 0
+"106
+[v i2_HabilitaLCD HabilitaLCD `(v  1 e 1 0 ]
+{
+"112
 } 0

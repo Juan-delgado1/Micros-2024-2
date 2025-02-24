@@ -26,10 +26,10 @@ extern "C" {
 #define Datos LATD	//El puerto de conexión de los datos el cual se puede cambiar
 #endif
 #ifndef RS
-#define RS LATE0	//Los pines de control al LCD los cuales se
+#define RS LATA3	//Los pines de control al LCD los cuales se
 #endif
 #ifndef E
-#define E LATE1	//pueden cambiar
+#define E LATA5	//pueden cambiar
 #endif
 
 unsigned char interfaz=8;
@@ -51,6 +51,7 @@ void DireccionaLCD(unsigned char);
 void FijaCursorLCD(unsigned char,unsigned char);
 void DesplazaPantallaD(void);
 void DesplazaPantallaI(void);
+void caracterpersonalizado(unsigned char direccion, unsigned char* patron);
 
 void ConfiguraLCD(unsigned char a){
 	if(a==4 | a ==8)
@@ -63,7 +64,7 @@ void EnviaDato(unsigned char a){
 		RetardoLCD(1);
 		Datos=(Datos & 0b00001111) | (a<<4);
 		//HabilitaLCD();
-		//RetardoLCD(1);
+		RetardoLCD(1);
 	}else if(interfaz==8){
 		Datos=a;
 	}	
@@ -233,6 +234,12 @@ void MensajeLCD_Var(char* a){
 //Función que escribe una cadena de caracteres variable en la pantalla
 //a es una cadena de caracteres guardada en una variable *char
 //Ejemplo: char aux[4]="Hola"; MensajeLCD_Var(aux);	
+    while (*a) {
+        EscribeLCD_c(*a);
+        a++;
+    }
+    
+
 }
 void DireccionaLCD(unsigned char a){
 //Función que ubica el cursor en una posición especificada
@@ -251,13 +258,20 @@ void FijaCursorLCD(unsigned char fila,unsigned char columna){
 //Si el display es de cuatro filas, Ej: 20x4, tiene 20 columnas
 	
 }
-void DesplazaPantallaD(void){
-//Función que desplaza una sola vez la pantalla a la derecha	
-	
+void DesplazaPantallaD(void) {
+    // Función que desplaza la pantalla a la derecha
+    RS = 0;
+    EnviaDato(0x1C); // Comando de desplazamiento a la derecha
+    HabilitaLCD();
+    RetardoLCD(4);
 }
-void DesplazaPantallaI(void){
-//Función que desplaza una sola vez la pantalla a la izquierda
-	
+
+void DesplazaPantallaI(void) {
+    // Función que desplaza la pantalla a la izquierda
+    RS = 0;
+    EnviaDato(0x18); // Comando de desplazamiento a la izquierda
+    HabilitaLCD();
+    RetardoLCD(4);
 }
 void DesplazaCursorD(void){
 //Función que desplaza una sola vez la pantalla a la derecha
@@ -286,4 +300,13 @@ void RetardoLCD(unsigned char a){
 				break;
 	}
 }
+
+void caracterpersonalizado(unsigned char direccion, unsigned char* patron){
+unsigned char i; 
+ComandoLCD(0x40 | (direccion << 3)); // Dirección en CGRAM, 0x40 es la base para CGRAM 
+for(i = 0; i < 8; i++){ 
+EscribeLCD_c(patron[i]); 
+}
+}
+
 #endif	/* LIBLCDXC8_H */
