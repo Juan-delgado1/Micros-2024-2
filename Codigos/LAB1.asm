@@ -1,8 +1,8 @@
-; Primera Seccion - Librerías
+; Primera Seccion - LibrerÃ­as 
 include P18f4550.inc
 
 			    
-; Segunda Seccion - Configuracion Microcontrolador, aún no se necesita
+; Segunda Seccion - Configuracion Microcontrolador, aÃºn no se necesita
 
 ; Tercera seccion - Crear variables
 aux1 equ 0h
@@ -27,7 +27,7 @@ Inicio
     movlw .9
     movwf aux1
     
-    ;movlw .256 ; EL número máximo que se puede guardar es 255, con 256 el valor no se guarda
+    ;movlw .256 ; EL nÃºmero mÃ¡ximo que se puede guardar es 255, con 256 el valor no se guarda
     ;movwf var1
     
     ; Tercer punto
