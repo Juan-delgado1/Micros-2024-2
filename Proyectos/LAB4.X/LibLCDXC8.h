@@ -52,6 +52,8 @@ void FijaCursorLCD(unsigned char,unsigned char);
 void DesplazaPantallaD(void);
 void DesplazaPantallaI(void);
 void caracterpersonalizado(unsigned char direccion, unsigned char* patron);
+void OcultarCursorLCD(void);
+void MostrarCursorLCD(void);
 
 void ConfiguraLCD(unsigned char a){
 	if(a==4 | a ==8)
@@ -308,5 +310,17 @@ for(i = 0; i < 8; i++){
 EscribeLCD_c(patron[i]); 
 }
 }
-
+void OcultarCursorLCD(void){
+    RS = 0;
+    EnviaDato(0x0C); // Enviar comando para ocultar el cursor
+    HabilitaLCD();
+    RetardoLCD(4);
+}
+void MostrarCursorLCD(void) {
+    RS = 0;
+    EnviaDato(0x0E); // Enviar comando para mostrar el cursor (0x0E sin parpadeo)
+                     // 0x0F seria con parpadeo
+    HabilitaLCD();
+    RetardoLCD(4);
+}
 #endif	/* LIBLCDXC8_H */
