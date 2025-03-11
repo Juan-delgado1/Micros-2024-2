@@ -1,0 +1,141 @@
+[p GLOBOPT AUTOSTATIC LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F4550 ]
+[d frameptr 4065 ]
+"62 D:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 D:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"54 D:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"62 D:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"19 D:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+"4 D:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\lbmod.c
+[v ___lbmod __lbmod `(uc  1 e 1 0 ]
+"10 D:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 3 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 3 0 ]
+"11 D:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 3 0 ]
+"8 D:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 3 0 ]
+"15 D:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 D:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\Umul64.c
+[v ___omul __omul `(ul  1 e 4 0 ]
+"16 D:\MateriasUNAL\Microcontroladores\Micros-2024-2\Proyectos\Pruebas.X\Oruebas.c
+[v _main main `(v  1 e 1 0 ]
+"54
+[v _EEPROM_Write EEPROM_Write `(v  1 e 1 0 ]
+"71
+[v _EEPROM_Read EEPROM_Read `(uc  1 e 1 0 ]
+"78
+[v _MostrarNumeros MostrarNumeros `(v  1 e 1 0 ]
+"3263 D:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4550.h
+[v _LATD LATD `VEuc  1 e 1 @3980 ]
+"3375
+[v _LATE LATE `VEuc  1 e 1 @3981 ]
+"4001
+[v _TRISD TRISD `VEuc  1 e 1 @3989 ]
+"4223
+[v _TRISE TRISE `VEuc  1 e 1 @3990 ]
+[s S45 . 1 `uc 1 RD 1 0 :1:0 
+`uc 1 WR 1 0 :1:1 
+`uc 1 WREN 1 0 :1:2 
+`uc 1 WRERR 1 0 :1:3 
+`uc 1 FREE 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 CFGS 1 0 :1:6 
+`uc 1 EEPGD 1 0 :1:7 
+]
+"4870
+[s S54 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 EEFS 1 0 :1:6 
+]
+[u S57 . 1 `S45 1 . 1 0 `S54 1 . 1 0 ]
+[v _EECON1bits EECON1bits `VES57  1 e 1 @4006 ]
+"4915
+[v _EECON2 EECON2 `VEuc  1 e 1 @4007 ]
+"4922
+[v _EEDATA EEDATA `VEuc  1 e 1 @4008 ]
+"4929
+[v _EEADR EEADR `VEuc  1 e 1 @4009 ]
+[s S73 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INT0IF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INT0IE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE_GIEL 1 0 :1:6 
+`uc 1 GIE_GIEH 1 0 :1:7 
+]
+"8614
+[s S82 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 INT0F 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 INT0E 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+[s S91 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIEH 1 0 :1:7 
+]
+[u S95 . 1 `S73 1 . 1 0 `S82 1 . 1 0 `S91 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES95  1 e 1 @4082 ]
+"10300
+[v _POR POR `VEb  1 e 0 @32385 ]
+"11 D:\MateriasUNAL\Microcontroladores\Micros-2024-2\Proyectos\Pruebas.X\Oruebas.c
+[v _contadas contadas `uc  1 e 1 0 ]
+"16
+[v _main main `(v  1 e 1 0 ]
+{
+"24
+[v main@address address `uc  1 a 1 5 ]
+"23
+[v main@data_read data_read `uc  1 a 1 4 ]
+"52
+} 0
+"78
+[v _MostrarNumeros MostrarNumeros `(v  1 e 1 0 ]
+{
+"104
+} 0
+"4 D:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\lbmod.c
+[v ___lbmod __lbmod `(uc  1 e 1 0 ]
+{
+[v ___lbmod@dividend dividend `uc  1 p 1 wreg ]
+"6
+[v ___lbmod@rem rem `uc  1 a 1 3 ]
+"7
+[v ___lbmod@counter counter `uc  1 a 1 2 ]
+"4
+[v ___lbmod@dividend dividend `uc  1 p 1 wreg ]
+[v ___lbmod@divisor divisor `uc  1 p 1 0 ]
+"9
+[v ___lbmod@dividend dividend `uc  1 p 1 1 ]
+"18
+} 0
+"54 D:\MateriasUNAL\Microcontroladores\Micros-2024-2\Proyectos\Pruebas.X\Oruebas.c
+[v _EEPROM_Write EEPROM_Write `(v  1 e 1 0 ]
+{
+[v EEPROM_Write@address address `uc  1 p 1 wreg ]
+[v EEPROM_Write@address address `uc  1 p 1 wreg ]
+[v EEPROM_Write@data data `uc  1 p 1 0 ]
+[v EEPROM_Write@address address `uc  1 p 1 1 ]
+"69
+} 0
+"71
+[v _EEPROM_Read EEPROM_Read `(uc  1 e 1 0 ]
+{
+[v EEPROM_Read@address address `uc  1 p 1 wreg ]
+[v EEPROM_Read@address address `uc  1 p 1 wreg ]
+[v EEPROM_Read@address address `uc  1 p 1 0 ]
+"76
+} 0

@@ -35,55 +35,61 @@
 [v ___lmul __lmul `(ul  1 e 4 0 ]
 "91 D:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\Umul64.c
 [v ___omul __omul `(ul  1 e 4 0 ]
-"27 D:\MateriasUNAL\Microcontroladores\Micros-2024-2\Proyectos\LAB4.X\LAB4.c
+"52 D:\MateriasUNAL\Microcontroladores\Micros-2024-2\Proyectos\LAB4.X\LAB4.c
 [v _main main `(v  1 e 1 0 ]
-"242
+"273
 [v _ISR ISR `IIH(v  1 e 1 0 ]
-"445
+"484
 [v _MostrarNumeros MostrarNumeros `(v  1 e 1 0 ]
 [v i2_MostrarNumeros MostrarNumeros `(v  1 e 1 0 ]
-"474
+"513
 [v _Emergencia Emergencia `(v  1 e 1 0 ]
-"58 D:\MateriasUNAL\Microcontroladores\Micros-2024-2\Proyectos\LAB4.X\LibLCDXC8.h
+"528
+[v _Bienvenida Bienvenida `(v  1 e 1 0 ]
+"59 D:\MateriasUNAL\Microcontroladores\Micros-2024-2\Proyectos\LAB4.X\LibLCDXC8.h
 [v _ConfiguraLCD ConfiguraLCD `(v  1 e 1 0 ]
-"62
+"63
 [v _EnviaDato EnviaDato `(v  1 e 1 0 ]
 [v i2_EnviaDato EnviaDato `(v  1 e 1 0 ]
-"74
+"75
 [v _InicializaLCD InicializaLCD `(v  1 e 1 0 ]
-"108
+"109
 [v _HabilitaLCD HabilitaLCD `(v  1 e 1 0 ]
 [v i2_HabilitaLCD HabilitaLCD `(v  1 e 1 0 ]
-"115
+"116
 [v _BorraLCD BorraLCD `(v  1 e 1 0 ]
-"122
+"123
 [v _CursorAInicio CursorAInicio `(v  1 e 1 0 ]
-"126
+"127
 [v _ComandoLCD ComandoLCD `(v  1 e 1 0 ]
-"139
+"140
 [v _EscribeLCD_c EscribeLCD_c `(v  1 e 1 0 ]
 [v i2_EscribeLCD_c EscribeLCD_c `(v  1 e 1 0 ]
-"148
+"149
 [v _EscribeLCD_n8 EscribeLCD_n8 `(v  1 e 1 0 ]
 [v i2_EscribeLCD_n8 EscribeLCD_n8 `(v  1 e 1 0 ]
-"235
+"236
 [v _MensajeLCD_Var MensajeLCD_Var `(v  1 e 1 0 ]
-"246
+"247
 [v _DireccionaLCD DireccionaLCD `(v  1 e 1 0 ]
 [v i2_DireccionaLCD DireccionaLCD `(v  1 e 1 0 ]
-"286
+"287
 [v _RetardoLCD RetardoLCD `(v  1 e 1 0 ]
 [v i2_RetardoLCD RetardoLCD `(v  1 e 1 0 ]
-"313
+"314
 [v _OcultarCursorLCD OcultarCursorLCD `(v  1 e 1 0 ]
-"319
+"320
 [v _MostrarCursorLCD MostrarCursorLCD `(v  1 e 1 0 ]
+"328
+[v _CrearCaracter CrearCaracter `(v  1 e 1 0 ]
 "2453 D:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4550.h
 [v _PORTB PORTB `VEuc  1 e 1 @3969 ]
 "2973
 [v _LATA LATA `VEuc  1 e 1 @3977 ]
 "3073
 [v _LATB LATB `VEuc  1 e 1 @3978 ]
+"3185
+[v _LATC LATC `VEuc  1 e 1 @3979 ]
 "3263
 [v _LATD LATD `VEuc  1 e 1 @3980 ]
 "3375
@@ -92,6 +98,8 @@
 [v _TRISA TRISA `VEuc  1 e 1 @3986 ]
 "3625
 [v _TRISB TRISB `VEuc  1 e 1 @3987 ]
+"3847
+[v _TRISC TRISC `VEuc  1 e 1 @3988 ]
 "4001
 [v _TRISD TRISD `VEuc  1 e 1 @3989 ]
 "4223
@@ -114,8 +122,6 @@
 [v _LATA4 LATA4 `VEb  1 e 0 @31820 ]
 "9946
 [v _LATA5 LATA5 `VEb  1 e 0 @31821 ]
-"10342
-[v _RA0 RA0 `VEb  1 e 0 @31744 ]
 "10375
 [v _RB4 RB4 `VEb  1 e 0 @31756 ]
 "10378
@@ -130,6 +136,8 @@
 [v _RBIF RBIF `VEb  1 e 0 @32656 ]
 "10396
 [v _RBPU RBPU `VEb  1 e 0 @32655 ]
+"10414
+[v _RC2 RC2 `VEb  1 e 0 @31762 ]
 "10516
 [v _RI RI `VEb  1 e 0 @32388 ]
 "10816
@@ -162,51 +170,42 @@
 [v _emergency emergency `uc  1 e 1 0 ]
 "21
 [v _contador contador `uc  1 e 1 0 ]
+"22
+[v _inactive inactive `uc  1 e 1 0 ]
+"24
+[v _banda1 banda1 `C[8]uc  1 e 8 0 ]
+"35
+[v _banda2 banda2 `C[8]uc  1 e 8 0 ]
 "35 D:\MateriasUNAL\Microcontroladores\Micros-2024-2\Proyectos\LAB4.X\LibLCDXC8.h
 [v _interfaz interfaz `uc  1 e 1 0 ]
-"27 D:\MateriasUNAL\Microcontroladores\Micros-2024-2\Proyectos\LAB4.X\LAB4.c
+"52 D:\MateriasUNAL\Microcontroladores\Micros-2024-2\Proyectos\LAB4.X\LAB4.c
 [v _main main `(v  1 e 1 0 ]
 {
-"162
+"193
 [v main@Actual_RA0 Actual_RA0 `uc  1 a 1 32 ]
-"154
+"185
 [v main@Antiguo_RA0 Antiguo_RA0 `uc  1 a 1 31 ]
-"238
+"269
 } 0
-"313 D:\MateriasUNAL\Microcontroladores\Micros-2024-2\Proyectos\LAB4.X\LibLCDXC8.h
-[v _OcultarCursorLCD OcultarCursorLCD `(v  1 e 1 0 ]
-{
-"318
-} 0
-"445 D:\MateriasUNAL\Microcontroladores\Micros-2024-2\Proyectos\LAB4.X\LAB4.c
+"484
 [v _MostrarNumeros MostrarNumeros `(v  1 e 1 0 ]
 {
-"471
+"510
 } 0
-"319 D:\MateriasUNAL\Microcontroladores\Micros-2024-2\Proyectos\LAB4.X\LibLCDXC8.h
-[v _MostrarCursorLCD MostrarCursorLCD `(v  1 e 1 0 ]
-{
-"324
-} 0
-"74
-[v _InicializaLCD InicializaLCD `(v  1 e 1 0 ]
-{
-"107
-} 0
-"148
+"149 D:\MateriasUNAL\Microcontroladores\Micros-2024-2\Proyectos\LAB4.X\LibLCDXC8.h
 [v _EscribeLCD_n8 EscribeLCD_n8 `(v  1 e 1 0 ]
 {
 [v EscribeLCD_n8@a a `uc  1 p 1 wreg ]
-"153
+"154
 [v EscribeLCD_n8@unidad unidad `uc  1 a 1 27 ]
 [v EscribeLCD_n8@decena decena `uc  1 a 1 26 ]
 [v EscribeLCD_n8@centena centena `uc  1 a 1 25 ]
-"148
+"149
 [v EscribeLCD_n8@a a `uc  1 p 1 wreg ]
 [v EscribeLCD_n8@b b `uc  1 p 1 24 ]
-"154
+"155
 [v EscribeLCD_n8@a a `uc  1 p 1 28 ]
-"185
+"186
 } 0
 "4 D:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\lbmod.c
 [v ___lbmod __lbmod `(uc  1 e 1 0 ]
@@ -238,93 +237,130 @@
 [v ___lbdiv@dividend dividend `uc  1 p 1 21 ]
 "26
 } 0
-"474 D:\MateriasUNAL\Microcontroladores\Micros-2024-2\Proyectos\LAB4.X\LAB4.c
+"513 D:\MateriasUNAL\Microcontroladores\Micros-2024-2\Proyectos\LAB4.X\LAB4.c
 [v _Emergencia Emergencia `(v  1 e 1 0 ]
 {
-"486
+"525
 } 0
-"235 D:\MateriasUNAL\Microcontroladores\Micros-2024-2\Proyectos\LAB4.X\LibLCDXC8.h
+"236 D:\MateriasUNAL\Microcontroladores\Micros-2024-2\Proyectos\LAB4.X\LibLCDXC8.h
 [v _MensajeLCD_Var MensajeLCD_Var `(v  1 e 1 0 ]
 {
 [v MensajeLCD_Var@a a `*.31uc  1 p 1 21 ]
-"245
+"246
 } 0
-"139
+"528 D:\MateriasUNAL\Microcontroladores\Micros-2024-2\Proyectos\LAB4.X\LAB4.c
+[v _Bienvenida Bienvenida `(v  1 e 1 0 ]
+{
+"529
+[v Bienvenida@pos pos `uc  1 a 1 26 ]
+"530
+[v Bienvenida@max_pos max_pos `uc  1 a 1 25 ]
+"567
+} 0
+"314 D:\MateriasUNAL\Microcontroladores\Micros-2024-2\Proyectos\LAB4.X\LibLCDXC8.h
+[v _OcultarCursorLCD OcultarCursorLCD `(v  1 e 1 0 ]
+{
+"319
+} 0
+"320
+[v _MostrarCursorLCD MostrarCursorLCD `(v  1 e 1 0 ]
+{
+"326
+} 0
+"75
+[v _InicializaLCD InicializaLCD `(v  1 e 1 0 ]
+{
+"108
+} 0
+"116
+[v _BorraLCD BorraLCD `(v  1 e 1 0 ]
+{
+"122
+} 0
+"140
 [v _EscribeLCD_c EscribeLCD_c `(v  1 e 1 0 ]
 {
 [v EscribeLCD_c@a a `uc  1 p 1 wreg ]
 [v EscribeLCD_c@a a `uc  1 p 1 wreg ]
-"143
+"144
 [v EscribeLCD_c@a a `uc  1 p 1 20 ]
-"147
+"148
 } 0
-"246
+"247
 [v _DireccionaLCD DireccionaLCD `(v  1 e 1 0 ]
 {
 [v DireccionaLCD@a a `uc  1 p 1 wreg ]
 [v DireccionaLCD@a a `uc  1 p 1 wreg ]
-"249
+"250
 [v DireccionaLCD@a a `uc  1 p 1 20 ]
-"253
+"254
 } 0
-"115
-[v _BorraLCD BorraLCD `(v  1 e 1 0 ]
+"328
+[v _CrearCaracter CrearCaracter `(v  1 e 1 0 ]
 {
-"121
+[v CrearCaracter@pos pos `uc  1 p 1 wreg ]
+"329
+[v CrearCaracter@i i `uc  1 a 1 23 ]
+"328
+[v CrearCaracter@pos pos `uc  1 p 1 wreg ]
+[v CrearCaracter@data data `*.31Cuc  1 p 1 20 ]
+"331
+[v CrearCaracter@pos pos `uc  1 p 1 22 ]
+"349
 } 0
-"62
+"63
 [v _EnviaDato EnviaDato `(v  1 e 1 0 ]
 {
 [v EnviaDato@a a `uc  1 p 1 wreg ]
 [v EnviaDato@a a `uc  1 p 1 wreg ]
 [v EnviaDato@a a `uc  1 p 1 19 ]
-"73
+"74
 } 0
-"286
+"287
 [v _RetardoLCD RetardoLCD `(v  1 e 1 0 ]
 {
 [v RetardoLCD@a a `uc  1 p 1 wreg ]
 [v RetardoLCD@a a `uc  1 p 1 wreg ]
 [v RetardoLCD@a a `uc  1 p 1 17 ]
-"304
+"305
 } 0
-"108
+"109
 [v _HabilitaLCD HabilitaLCD `(v  1 e 1 0 ]
 {
-"114
+"115
 } 0
-"58
+"59
 [v _ConfiguraLCD ConfiguraLCD `(v  1 e 1 0 ]
 {
 [v ConfiguraLCD@a a `uc  1 p 1 wreg ]
 [v ConfiguraLCD@a a `uc  1 p 1 wreg ]
 [v ConfiguraLCD@a a `uc  1 p 1 16 ]
-"61
+"62
 } 0
-"242 D:\MateriasUNAL\Microcontroladores\Micros-2024-2\Proyectos\LAB4.X\LAB4.c
+"273 D:\MateriasUNAL\Microcontroladores\Micros-2024-2\Proyectos\LAB4.X\LAB4.c
 [v _ISR ISR `IIH(v  1 e 1 0 ]
 {
-"442
+"481
 } 0
-"445
+"484
 [v i2_MostrarNumeros MostrarNumeros `(v  1 e 1 0 ]
 {
-"471
+"510
 } 0
-"148 D:\MateriasUNAL\Microcontroladores\Micros-2024-2\Proyectos\LAB4.X\LibLCDXC8.h
+"149 D:\MateriasUNAL\Microcontroladores\Micros-2024-2\Proyectos\LAB4.X\LibLCDXC8.h
 [v i2_EscribeLCD_n8 EscribeLCD_n8 `(v  1 e 1 0 ]
 {
 [v i2EscribeLCD_n8@a a `uc  1 p 1 wreg ]
-"153
+"154
 [v i2EscribeLCD_n8@unidad unidad `uc  1 a 1 11 ]
 [v i2EscribeLCD_n8@decena decena `uc  1 a 1 10 ]
 [v i2EscribeLCD_n8@centena centena `uc  1 a 1 9 ]
-"148
+"149
 [v i2EscribeLCD_n8@a a `uc  1 p 1 wreg ]
 [v i2EscribeLCD_n8@b b `uc  1 p 1 8 ]
-"154
+"155
 [v i2EscribeLCD_n8@a a `uc  1 p 1 12 ]
-"185
+"186
 } 0
 "4 D:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\lbmod.c
 [v i2___lbmod __lbmod `(uc  1 e 1 0 ]
@@ -356,42 +392,42 @@
 [v i2___lbdiv@dividend dividend `uc  1 p 1 5 ]
 "26
 } 0
-"139 D:\MateriasUNAL\Microcontroladores\Micros-2024-2\Proyectos\LAB4.X\LibLCDXC8.h
+"140 D:\MateriasUNAL\Microcontroladores\Micros-2024-2\Proyectos\LAB4.X\LibLCDXC8.h
 [v i2_EscribeLCD_c EscribeLCD_c `(v  1 e 1 0 ]
 {
 [v i2EscribeLCD_c@a a `uc  1 p 1 wreg ]
 [v i2EscribeLCD_c@a a `uc  1 p 1 wreg ]
-"143
+"144
 [v i2EscribeLCD_c@a a `uc  1 p 1 4 ]
-"147
+"148
 } 0
-"246
+"247
 [v i2_DireccionaLCD DireccionaLCD `(v  1 e 1 0 ]
 {
 [v i2DireccionaLCD@a a `uc  1 p 1 wreg ]
 [v i2DireccionaLCD@a a `uc  1 p 1 wreg ]
-"249
+"250
 [v i2DireccionaLCD@a a `uc  1 p 1 4 ]
-"253
+"254
 } 0
-"62
+"63
 [v i2_EnviaDato EnviaDato `(v  1 e 1 0 ]
 {
 [v i2EnviaDato@a a `uc  1 p 1 wreg ]
 [v i2EnviaDato@a a `uc  1 p 1 wreg ]
 [v i2EnviaDato@a a `uc  1 p 1 3 ]
-"73
+"74
 } 0
-"286
+"287
 [v i2_RetardoLCD RetardoLCD `(v  1 e 1 0 ]
 {
 [v i2RetardoLCD@a a `uc  1 p 1 wreg ]
 [v i2RetardoLCD@a a `uc  1 p 1 wreg ]
 [v i2RetardoLCD@a a `uc  1 p 1 1 ]
-"304
+"305
 } 0
-"108
+"109
 [v i2_HabilitaLCD HabilitaLCD `(v  1 e 1 0 ]
 {
-"114
+"115
 } 0

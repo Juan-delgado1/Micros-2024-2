@@ -5690,6 +5690,7 @@ void DesplazaPantallaI(void);
 void caracterpersonalizado(unsigned char direccion, unsigned char* patron);
 void OcultarCursorLCD(void);
 void MostrarCursorLCD(void);
+void CrearCaracter(unsigned char pos, const unsigned char *data);
 
 void ConfiguraLCD(unsigned char a){
 if(a==4 | a ==8)
@@ -5889,7 +5890,7 @@ RetardoLCD(4);
 }
 void FijaCursorLCD(unsigned char fila,unsigned char columna){
 
-# 262
+# 263
 }
 void DesplazaPantallaD(void) {
 
@@ -5950,6 +5951,30 @@ RetardoLCD(4);
 void MostrarCursorLCD(void) {
 LATA3 = 0;
 EnviaDato(0x0E);
+
+HabilitaLCD();
+RetardoLCD(4);
+}
+
+void CrearCaracter(unsigned char pos, const unsigned char *data) {
+unsigned char i;
+
+LATA3 = 0;
+EnviaDato(0x40 + (pos * 8));
+HabilitaLCD();
+RetardoLCD(4);
+
+
+LATA3 = 1;
+for(i = 0; i < 8; i++) {
+EnviaDato(data[i]);
+HabilitaLCD();
+RetardoLCD(4);
+}
+
+
+LATA3 = 0;
+EnviaDato(0x80);
 HabilitaLCD();
 RetardoLCD(4);
 }
@@ -5973,7 +5998,32 @@ unsigned char ok;
 unsigned char Iniciarpregunta;
 unsigned char emergency;
 unsigned char contador;
+unsigned char inactive;
 
+const unsigned char banda1[] = {
+0b00000,
+0b01110,
+0b01010,
+0b01110,
+0b00000,
+0b11111,
+0b10101,
+0b11111
+};
+
+const unsigned char banda2[] = {
+0b00000,
+0b00000,
+0b00000,
+0b00000,
+0b00000,
+0b11111,
+0b10101,
+0b11111
+};
+
+
+void Bienvenida(void);
 void MostrarNumeros(void);
 void Emergencia(void);
 void __interrupt() ISR(void);
@@ -5986,16 +6036,18 @@ TRISA = 0x01;
 
 TRISB = 0b11110000;
 TRISD = 0x00;
+TRISC = 0xFF;
 TRISE = 0x00;
 
 
 LATA = 0b010000;
 LATB = 0x00;
+LATC = 0x00;
 LATD = 0x00;
 LATE = 0x00;
 RBPU=0;
 
-# 48
+# 75
 RBIF=0;
 RBIE=1;
 
@@ -6024,8 +6076,12 @@ if(RI == 1){
 
 
 BorraLCD();
+Bienvenida();
+contador = 0;
+BorraLCD();
 MensajeLCD_Var("Bienvenida");
-_delay((unsigned long)((500)*(1000000/4000.0)));
+
+_delay((unsigned long)((1000)*(1000000/4000.0)));
 }
 
 
@@ -6035,7 +6091,7 @@ LATE = 0b101;
 RI = 1;
 }
 
-# 91
+# 122
 while(1){
 
 
@@ -6044,7 +6100,7 @@ objetivo = 0;
 ok = 0;
 contador = 0;
 
-# 103
+# 134
 BorraLCD();
 MostrarCursorLCD();
 MensajeLCD_Var(*aux);
@@ -6104,7 +6160,7 @@ if(emergency == 1){
 Emergencia();
 }
 
-unsigned char Actual_RA0 = RA0;
+unsigned char Actual_RA0 = RC2;
 
 
 if(Antiguo_RA0 == 0 && Actual_RA0 == 1 && contadas < objetivo){
@@ -6154,7 +6210,7 @@ break;
 }
 }
 
-# 217
+# 248
 ok = 0;
 
 
@@ -6189,18 +6245,22 @@ TMR0 = 49911;
 TMR0IF = 0;
 LATA1 = LATA1^1;
 
+# 286
+if (contador == 0 && inactive == 1) {
 
 
-if(contador == 0){
-
-LATA4 = 1;
+LATA4 =1;
+inactive = 0;
 }
 
+
 contador++;
+if(contador < 20) inactive = 0;
 
 if(contador >= 20 && contador < 40){
 
 LATA4 = 0;
+inactive = 1;
 } else if(contador >= 40){
 
 
@@ -6284,6 +6344,7 @@ DireccionaLCD(0xC1);
 
 EscribeLCD_c(' ');
 DireccionaLCD(0xC1);
+Tecla = objetivo/10;
 input--;
 
 }else{
@@ -6424,4 +6485,46 @@ while(1){
 GIE = 0;
 
 }
+}
+
+
+void Bienvenida(void){
+unsigned char pos = 0;
+unsigned char max_pos = 15;
+ConfiguraLCD(4);
+InicializaLCD();
+OcultarCursorLCD();
+CrearCaracter(0, banda1);
+CrearCaracter(1, banda2);
+for (pos = 0; pos <= max_pos; pos++) {
+
+DireccionaLCD(0x80 + pos);
+EscribeLCD_c(1);
+_delay((unsigned long)((50)*(1000000/4000.0)));
+}
+
+for (pos = 0; pos < max_pos; pos++) {
+
+DireccionaLCD(0x80 + pos);
+EscribeLCD_c(0);
+_delay((unsigned long)((50)*(1000000/4000.0)));
+DireccionaLCD(0x80 + pos);
+EscribeLCD_c(1);
+_delay((unsigned long)((50)*(1000000/4000.0)));
+}
+
+DireccionaLCD(0x80 + max_pos);
+EscribeLCD_c(0);
+for (pos = max_pos; pos > 0; pos--) {
+
+DireccionaLCD(0x80 + pos);
+EscribeLCD_c(0);
+_delay((unsigned long)((50)*(1000000/4000.0)));
+DireccionaLCD(0x80 + pos);
+EscribeLCD_c(1);
+_delay((unsigned long)((50)*(1000000/4000.0)));
+}
+BorraLCD;
+
+MostrarCursorLCD();
 }

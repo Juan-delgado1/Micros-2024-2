@@ -1,4 +1,4 @@
-MPASM 5.67                       LAB1B23.ASM   12-16-2024  11:53:30         PAGE  1
+MPASM 5.67                       LAB1B23.ASM   2-28-2025  14:26:51         PAGE  1
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -18,7 +18,7 @@ Warning[205]: Found directive in column 1. (include)
                       01765         LIST
                       00002 
 Warning[205]: Found directive in column 1. (CONFIG)
-                      00003 CONFIG FOSC = INTOSC_EC ; Reloj Externo
+                      00003 CONFIG FOSC = EC_EC     ; Reloj Externo
 Warning[205]: Found directive in column 1. (CONFIG)
                       00004 CONFIG WDT = OFF        ; Perro Guardian
 Warning[205]: Found directive in column 1. (CONFIG)
@@ -57,7 +57,7 @@ Warning[205]: Found directive in column 1. (ORG)
 00001A 6A8C           00032    clrf LATD    ; [1] Negro
 00001C 0EF8           00033    movlw .248
 00001E 6E02           00034    movwf var1
-MPASM 5.67                       LAB1B23.ASM   12-16-2024  11:53:30         PAGE  2
+MPASM 5.67                       LAB1B23.ASM   2-28-2025  14:26:51         PAGE  2
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -116,7 +116,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 00007A 6E00           00085     movwf aux1
 00007C                00086 AuxRetardo
 00007C 2E00           00087     decfsz aux1,f
-MPASM 5.67                       LAB1B23.ASM   12-16-2024  11:53:30         PAGE  3
+MPASM 5.67                       LAB1B23.ASM   2-28-2025  14:26:51         PAGE  3
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -128,7 +128,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00091   
 Warning[205]: Found directive in column 1. (end)
                       00092 end
-MPASM 5.67                       LAB1B23.ASM   12-16-2024  11:53:30         PAGE  4
+MPASM 5.67                       LAB1B23.ASM   2-28-2025  14:26:51         PAGE  4
 
 
 SYMBOL TABLE
@@ -187,7 +187,7 @@ BOR                               00000000
 BRG16                             00000003
 BRGH                              00000002
 BSR                               00000FE0
-MPASM 5.67                       LAB1B23.ASM   12-16-2024  11:53:30         PAGE  5
+MPASM 5.67                       LAB1B23.ASM   2-28-2025  14:26:51         PAGE  5
 
 
 SYMBOL TABLE
@@ -246,7 +246,7 @@ CM1                               00000001
 CM2                               00000002
 CMCON                             00000FB4
 CMIE                              00000006
-MPASM 5.67                       LAB1B23.ASM   12-16-2024  11:53:30         PAGE  6
+MPASM 5.67                       LAB1B23.ASM   2-28-2025  14:26:51         PAGE  6
 
 
 SYMBOL TABLE
@@ -305,7 +305,7 @@ EEIF                              00000004
 EEIP                              00000004
 EEPGD                             00000007
 ENDP0                             00000003
-MPASM 5.67                       LAB1B23.ASM   12-16-2024  11:53:30         PAGE  7
+MPASM 5.67                       LAB1B23.ASM   2-28-2025  14:26:51         PAGE  7
 
 
 SYMBOL TABLE
@@ -364,7 +364,7 @@ HLVDL2                            00000002
 HLVDL3                            00000003
 I2C_DAT                           00000005
 I2C_READ                          00000002
-MPASM 5.67                       LAB1B23.ASM   12-16-2024  11:53:30         PAGE  8
+MPASM 5.67                       LAB1B23.ASM   2-28-2025  14:26:51         PAGE  8
 
 
 SYMBOL TABLE
@@ -423,7 +423,7 @@ LATA3                             00000003
 LATA4                             00000004
 LATA5                             00000005
 LATA6                             00000006
-MPASM 5.67                       LAB1B23.ASM   12-16-2024  11:53:30         PAGE  9
+MPASM 5.67                       LAB1B23.ASM   2-28-2025  14:26:51         PAGE  9
 
 
 SYMBOL TABLE
@@ -482,7 +482,7 @@ NOT_PD                            00000002
 NOT_POR                           00000001
 NOT_RBPU                          00000007
 NOT_RI                            00000004
-MPASM 5.67                       LAB1B23.ASM   12-16-2024  11:53:30         PAGE 10
+MPASM 5.67                       LAB1B23.ASM   2-28-2025  14:26:51         PAGE 10
 
 
 SYMBOL TABLE
@@ -541,7 +541,7 @@ PLUSW1                            00000FE3
 PLUSW2                            00000FDB
 POR                               00000001
 PORTA                             00000F80
-MPASM 5.67                       LAB1B23.ASM   12-16-2024  11:53:30         PAGE 11
+MPASM 5.67                       LAB1B23.ASM   2-28-2025  14:26:51         PAGE 11
 
 
 SYMBOL TABLE
@@ -600,7 +600,7 @@ RC2                               00000002
 RC4                               00000004
 RC5                               00000005
 RC6                               00000006
-MPASM 5.67                       LAB1B23.ASM   12-16-2024  11:53:30         PAGE 12
+MPASM 5.67                       LAB1B23.ASM   2-28-2025  14:26:51         PAGE 12
 
 
 SYMBOL TABLE
@@ -659,7 +659,7 @@ SPBRGH                            00000FB0
 SPEN                              00000007
 SPP0                              00000000
 SPP1                              00000001
-MPASM 5.67                       LAB1B23.ASM   12-16-2024  11:53:30         PAGE 13
+MPASM 5.67                       LAB1B23.ASM   2-28-2025  14:26:51         PAGE 13
 
 
 SYMBOL TABLE
@@ -718,7 +718,7 @@ T0CON                             00000FD5
 T0CS                              00000005
 T0IE                              00000005
 T0IF                              00000002
-MPASM 5.67                       LAB1B23.ASM   12-16-2024  11:53:30         PAGE 14
+MPASM 5.67                       LAB1B23.ASM   2-28-2025  14:26:51         PAGE 14
 
 
 SYMBOL TABLE
@@ -777,7 +777,7 @@ TMR2IE                            00000001
 TMR2IF                            00000001
 TMR2IP                            00000001
 TMR2ON                            00000002
-MPASM 5.67                       LAB1B23.ASM   12-16-2024  11:53:30         PAGE 15
+MPASM 5.67                       LAB1B23.ASM   2-28-2025  14:26:51         PAGE 15
 
 
 SYMBOL TABLE
@@ -836,7 +836,7 @@ TRISE                             00000F96
 TRISE0                            00000000
 TRISE1                            00000001
 TRISE2                            00000002
-MPASM 5.67                       LAB1B23.ASM   12-16-2024  11:53:30         PAGE 16
+MPASM 5.67                       LAB1B23.ASM   2-28-2025  14:26:51         PAGE 16
 
 
 SYMBOL TABLE
@@ -895,7 +895,7 @@ URSTIE                            00000000
 URSTIF                            00000000
 USBEN                             00000003
 USBIE                             00000005
-MPASM 5.67                       LAB1B23.ASM   12-16-2024  11:53:30         PAGE 17
+MPASM 5.67                       LAB1B23.ASM   2-28-2025  14:26:51         PAGE 17
 
 
 SYMBOL TABLE
@@ -954,7 +954,7 @@ _CP1_ON_5L                        000000FD
 _CP2_OFF_5L                       000000FF
 _CP2_ON_5L                        000000FB
 _CP3_OFF_5L                       000000FF
-MPASM 5.67                       LAB1B23.ASM   12-16-2024  11:53:30         PAGE 18
+MPASM 5.67                       LAB1B23.ASM   2-28-2025  14:26:51         PAGE 18
 
 
 SYMBOL TABLE
@@ -1013,7 +1013,7 @@ _LPT1OSC_OFF_3H                   000000FB
 _LPT1OSC_ON_3H                    000000FF
 _LVP_OFF_4L                       000000FB
 _LVP_ON_4L                        000000FF
-MPASM 5.67                       LAB1B23.ASM   12-16-2024  11:53:30         PAGE 19
+MPASM 5.67                       LAB1B23.ASM   2-28-2025  14:26:51         PAGE 19
 
 
 SYMBOL TABLE
@@ -1072,7 +1072,7 @@ _WRTC_ON_6H                       000000DF
 _WRTD_OFF_6H                      000000FF
 _WRTD_ON_6H                       0000007F
 _XINST_OFF_4L                     000000BF
-MPASM 5.67                       LAB1B23.ASM   12-16-2024  11:53:30         PAGE 20
+MPASM 5.67                       LAB1B23.ASM   2-28-2025  14:26:51         PAGE 20
 
 
 SYMBOL TABLE

@@ -10,13 +10,12 @@ void main(void){
     TRISC2=0;
     TRISD=0;
     LATD=0;
-    TMR2=0;
-    PR2=249;    //Fpwm=1KHz
-    T2CON=0b00000000;
-    CCPR2L=1;
-    CCP2CON=0b00001100;    
-    CCPR1L=249;
-    CCP1CON=0b00001100;    
+    TMR2=0;    
+    PR2=249;    //Fpwm=1KHz Tpwm = 1ms
+    T2CON=0b00000000;    
+    CCPR2L=249
+            ;     //ton=(249+1)*d
+    CCP2CON=0b00001100; 
     TMR2ON=1;
     /*TMR1=60536;
     T1CON=0b10000000;
@@ -28,17 +27,20 @@ void main(void){
     PEIE=1;
     GIE=1;
     TMR1ON=1;*/
-    while(1){
+    while(1){/*
       LATD0=1;
-      __delay_ms(100);  //Duty=ton/T
+      __delay_us(50);  //Duty=ton/T
       LATD0=0;
-      __delay_ms(100);
+      __delay_us(150);
       if(CCPR2L>248)
         CCPR2L=1;
       CCPR2L=CCPR2L+2;
       if(CCPR1L<2)
         CCPR1L=249;
-      CCPR1L=CCPR1L-2;      
+      CCPR1L=CCPR1L-2;  
+      */
+      
+      
     }
 }
 void interrupt ISR(void){

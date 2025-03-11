@@ -19,7 +19,32 @@ unsigned char ok;               // Variable que verifica si se presiono la tecla
 unsigned char Iniciarpregunta;  // Habilita el teclado despues de la bienvenida
 unsigned char emergency;        // Avisa si se activo el modo de emergencia
 unsigned char contador;         // Cuenta los segundos de inactividad del PIC
+unsigned char inactive;         //Es uno si se deja inactiva por 10 segundos
 
+const unsigned char banda1[] = {
+    0b00000,
+    0b01110,
+    0b01010,
+    0b01110,
+    0b00000,
+    0b11111,
+    0b10101,
+    0b11111
+};
+
+const unsigned char banda2[] = {
+    0b00000,
+    0b00000,
+    0b00000,
+    0b00000,
+    0b00000,
+    0b11111,
+    0b10101,    
+    0b11111
+};
+
+
+void Bienvenida(void);
 void MostrarNumeros(void);      // Esqueleto de Funcion para mostrar un numero en el 7segmentos y el RGB
 void Emergencia(void);          // Esqueleto de Funcion para activar el modo de parada de emergencia
 void __interrupt() ISR(void);   // Esqueleto de las interrupciones
@@ -32,11 +57,13 @@ void main(void){
                         // A2:Buzzer //A1:LuzdeCPU //A0: Sensor de barrera
     TRISB = 0b11110000; // Entradas 1 Columnas - Salidas 0 Filas
     TRISD = 0x00;       // D0-3 7segmentos  -  D4-7 LCD
+    TRISC = 0xFF;
     TRISE = 0x00;       // RGB
     
     // Inicio de puertos
     LATA = 0b010000;    // Todos en 0 menos el de la luz de fondo
     LATB = 0x00;
+    LATC = 0x00;
     LATD = 0x00;
     LATE = 0x00;
     RBPU=0;             // Activa resistencias de pullup para el teclado
@@ -53,7 +80,7 @@ void main(void){
                             // Bit 6 en '0': Timer 16 bits
     TMR0 = 49911;            // Precarga inicial
     // Formula: Precarga = 2^Nbits - (Tiempo * Frecuencia del bus) / preescaler
-    // Reemplazando 3036 = 2^16 - (0,5 * 250000) / 8   
+    // Reemplazando 49911 = 2^16 - (0,5 * 250000) / 8   
     TMR0IF = 0;             // Bandera de la interrupcion del Timer0 - Inicia abajo
     TMR0IE = 1;             // Habilita interrupción de Timer 0
           
@@ -73,8 +100,12 @@ void main(void){
         // Si se reseteo por softwre no muestra la bienvenida
         //Mensaje binevenida
         BorraLCD();                     // Borra todo lo que esta en la LCD
+        Bienvenida();
+        contador = 0;
+        BorraLCD();
         MensajeLCD_Var("Bienvenida");   // Muestra el mensaje de bienvenida
-        __delay_ms(500);                // Muestra el mensaje hasta copletar 5 segundos
+        
+        __delay_ms(1000);                // Muestra el mensaje hasta copletar 5 segundos
     } 
     
    // Detecta si se reseteo por software, si el numero ingresado no es válido
@@ -159,7 +190,7 @@ void main(void){
                 Emergencia();
             }
             
-            unsigned char Actual_RA0 = RA0; // Lee el estado actual del pin RA0
+            unsigned char Actual_RA0 = RC2; // Lee el estado actual del pin RA0
             
             // Deteccion sensor de barrera
             if(Antiguo_RA0 == 0 && Actual_RA0 == 1 && contadas < objetivo){ //Señal del sensor
@@ -249,24 +280,31 @@ void __interrupt() ISR(void){
         LATA1 = LATA1^1;    // XOR: Cambio de valor del LED en RB3 de 0 a 1 ó de 1 a 0
         // El LED cambiará cada 0,5 segundos
         // Perido de 1 segundo, frecunecia de 1 Hz
-                
-        if(contador == 0){  
-            // Si el contador es cero de nuevo osea que hbo actividad
-            LATA4 = 1;      // Se activa luz de fondo
+        
+        
+        
+        if (contador == 0 && inactive == 1) {       
+            // Si hay activdad y esta inactivo
+            // Prende la luz de fondo
+            LATA4 =1;                   
+            inactive = 0;
         }
         
+        
         contador++;         // Cada interrupción del timer aumenta una unidad al contador
+        if(contador < 20) inactive = 0;
         
         if(contador >= 20 && contador < 40){
             // si el contador llega a 10segundos(20 interrupciones timer) de inactividad
             LATA4 = 0;      // Desactiva la luz de fondo de la lcd
+            inactive = 1;   // variable inactive se pone en una
         } else if(contador >= 40){
             // Si el contador llega a 20segundos(40 interrupciones timer)
             // Entra en modo de suspension
             SLEEP();
             // Suspende reloj CPU y todos los modulos
             // Detiene la ejecucion
-        }
+        } 
     }
     
     // INTERRUPCIONO DE TECLADO
@@ -343,6 +381,7 @@ void __interrupt() ISR(void){
                                              // que es donde esta el numero y
                         EscribeLCD_c(' ');   // reemplaza el numero por un 0
                         DireccionaLCD(0xC1); // vuelve a direccionar a la lcd a la segunda casilla
+                        Tecla = objetivo/10;
                         input--;             // resta una unidad a la variable input 
                                              // para especificar que se borro un numer0
                     }else{
@@ -484,3 +523,45 @@ void Emergencia(void){
                     // bucle infinito hasta reset por MCLR
     }
 }
+
+
+void Bienvenida(void){
+       unsigned char pos = 0;  
+       unsigned char max_pos = 15;  
+       ConfiguraLCD(4);
+       InicializaLCD();
+       OcultarCursorLCD();
+       CrearCaracter(0, banda1);
+       CrearCaracter(1, banda2);
+       for (pos = 0; pos <= max_pos; pos++) {
+           
+           DireccionaLCD(0x80 + pos);  
+           EscribeLCD_c(1);  // Muestra la bolita normal
+           __delay_ms(50);
+       }
+       
+       for (pos = 0; pos < max_pos; pos++) {
+          
+           DireccionaLCD(0x80 + pos);  
+           EscribeLCD_c(0);  // Muestra la bolita normal
+           __delay_ms(50);
+           DireccionaLCD(0x80 + pos); 
+           EscribeLCD_c(1);
+           __delay_ms(50);
+       }
+       
+       DireccionaLCD(0x80 + max_pos);
+       EscribeLCD_c(0); 
+       for (pos = max_pos; pos > 0; pos--) {
+           
+           DireccionaLCD(0x80 + pos);  
+           EscribeLCD_c(0);  
+           __delay_ms(50);
+           DireccionaLCD(0x80 + pos); 
+           EscribeLCD_c(1);
+           __delay_ms(50);
+       } 
+       BorraLCD;
+
+       MostrarCursorLCD();      
+   }

@@ -1,0 +1,117 @@
+[p GLOBOPT AUTOSTATIC LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F4550 ]
+[d frameptr 4065 ]
+"62 D:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 D:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"54 D:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"62 D:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"19 D:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+"7 D:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"10 D:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 3 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 3 0 ]
+"11 D:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 3 0 ]
+"8 D:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 3 0 ]
+"15 D:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 D:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\Umul64.c
+[v ___omul __omul `(ul  1 e 4 0 ]
+"15 D:\MateriasUNAL\Microcontroladores\Micros-2024-2\Proyectos\PruebaSensor.X\PruebaSensor.c
+[v _main main `(v  1 e 1 0 ]
+"67
+[v _MedirDistancia MedirDistancia `(uc  1 e 1 0 ]
+"102
+[v _ISR ISR `II(v  1 e 1 0 ]
+"3263 D:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4550.h
+[v _LATD LATD `VEuc  1 e 1 @3980 ]
+"4001
+[v _TRISD TRISD `VEuc  1 e 1 @3989 ]
+"4936
+[v _RCSTA RCSTA `VEuc  1 e 1 @4011 ]
+"5146
+[v _TXSTA TXSTA `VEuc  1 e 1 @4012 ]
+"5426
+[v _SPBRG SPBRG `VEuc  1 e 1 @4015 ]
+"6062
+[v _BAUDCON BAUDCON `VEuc  1 e 1 @4024 ]
+"6242
+[v _CCP2CON CCP2CON `VEuc  1 e 1 @4026 ]
+"6306
+[v _CCPR2 CCPR2 `VEus  1 e 2 @4027 ]
+"7415
+[v _T1CON T1CON `VEuc  1 e 1 @4045 ]
+"7518
+[v _TMR1 TMR1 `VEus  1 e 2 @4046 ]
+"8069
+[v _T0CON T0CON `VEuc  1 e 1 @4053 ]
+"8139
+[v _TMR0 TMR0 `VEus  1 e 2 @4054 ]
+"9097
+[v _CCP2IF CCP2IF `VEb  1 e 0 @32008 ]
+"9745
+[v _GIE GIE `VEb  1 e 0 @32663 ]
+"9976
+[v _LATC0 LATC0 `VEb  1 e 0 @31832 ]
+"10012
+[v _LATD7 LATD7 `VEb  1 e 0 @31847 ]
+"10399
+[v _RC0 RC0 `VEb  1 e 0 @31760 ]
+"10402
+[v _RC1 RC1 `VEb  1 e 0 @31761 ]
+"10816
+[v _TMR0IE TMR0IE `VEb  1 e 0 @32661 ]
+"10819
+[v _TMR0IF TMR0IF `VEb  1 e 0 @32658 ]
+"10825
+[v _TMR0ON TMR0ON `VEb  1 e 0 @32431 ]
+"10834
+[v _TMR1IF TMR1IF `VEb  1 e 0 @31984 ]
+"10840
+[v _TMR1ON TMR1ON `VEb  1 e 0 @32360 ]
+"10930
+[v _TRISC0 TRISC0 `VEb  1 e 0 @31904 ]
+"14 D:\MateriasUNAL\Microcontroladores\Micros-2024-2\Proyectos\PruebaSensor.X\PruebaSensor.c
+[v _etimeout etimeout `uc  1 e 1 0 ]
+[v _ctimeout ctimeout `uc  1 e 1 0 ]
+"15
+[v _main main `(v  1 e 1 0 ]
+{
+"17
+[v main@d d `uc  1 a 1 9 ]
+"66
+} 0
+"67
+[v _MedirDistancia MedirDistancia `(uc  1 e 1 0 ]
+{
+"68
+[v MedirDistancia@aux aux `uc  1 a 1 7 ]
+"93
+} 0
+"7 D:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwdiv@quotient quotient `ui  1 a 2 4 ]
+"11
+[v ___lwdiv@counter counter `uc  1 a 1 6 ]
+"7
+[v ___lwdiv@dividend dividend `ui  1 p 2 0 ]
+[v ___lwdiv@divisor divisor `ui  1 p 2 2 ]
+"30
+} 0
+"102 D:\MateriasUNAL\Microcontroladores\Micros-2024-2\Proyectos\PruebaSensor.X\PruebaSensor.c
+[v _ISR ISR `II(v  1 e 1 0 ]
+{
+"113
+} 0
