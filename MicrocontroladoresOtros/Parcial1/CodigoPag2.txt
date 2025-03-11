@@ -1,0 +1,42 @@
+;Librerias
+include P18F4550.inc
+
+;Configuracion uC
+CONFIG FOSC=EC_EC
+CONFIG WDT=OFF
+CONFIG PBADEN = OFF 
+CONFIG LVP = OFF
+
+;Def Variables
+aux1 equ 1h
+aux2 equ 2h
+aux3 equ 3h
+aux4 equ 4h
+
+;Instrucciones
+Start
+
+movlw b'11111111'
+movwf TRISB
+movlw b'11111111'
+movwf TRISD
+
+Loop
+
+movf PORTB, w
+movwf aux1
+
+movf PORTD, w
+movwf aux2
+
+movf aux2, w
+subwf aux1,w
+movwf aux3
+
+movf aux2, w
+andwf aux1,w
+movwf aux4
+
+goto Loop
+
+	end

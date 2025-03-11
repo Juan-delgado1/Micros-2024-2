@@ -1,0 +1,1451 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/production\Lab4Micros.X.production.obj
+cinit CODE 0 1634 1634 38 1 2
+idloc IDLOC 5 200000 200000 8 1 1
+intcode_body CODE 0 868 868 17C 1 2
+text0 CODE 0 9E4 9E4 15A 1 2
+text1 CODE 0 E36 E36 CC 1 2
+text2 CODE 0 1342 1342 6E 1 2
+text3 CODE 0 106A 106A 82 1 2
+text4 CODE 0 190C 190C 6 1 2
+text5 CODE 0 116E 116E 78 1 2
+text6 CODE 0 1776 1776 28 1 2
+text7 CODE 0 1870 1870 16 1 2
+text8 CODE 0 C6A C6A E6 1 2
+text9 CODE 0 179E 179E 28 1 2
+text10 CODE 0 166C 166C 38 1 2
+text11 CODE 0 1886 1886 16 1 2
+text12 CODE 0 FCE FCE 9C 1 2
+text13 CODE 0 1858 1858 18 1 2
+text14 CODE 0 125E 125E 72 1 2
+text15 CODE 0 12D0 12D0 72 1 2
+text16 CODE 0 1744 1744 32 1 2
+text17 CODE 0 191C 191C 2 1 2
+text18 CODE 0 18C8 18C8 14 1 2
+text19 CODE 0 156C 156C 46 1 2
+text20 CODE 0 1476 1476 56 1 2
+text21 CODE 0 18F0 18F0 E 1 2
+text23 CODE 0 141E 141E 58 1 2
+text24 CODE 0 183C 183C 1C 1 2
+text25 CODE 0 B3E B3E 12C 1 2
+text26 CODE 0 F02 F02 CC 1 2
+text27 CODE 0 13B0 13B0 6E 1 2
+text28 CODE 0 10EC 10EC 82 1 2
+text29 CODE 0 1912 1912 6 1 2
+text30 CODE 0 11E6 11E6 78 1 2
+text31 CODE 0 D50 D50 E6 1 2
+text32 CODE 0 17C6 17C6 28 1 2
+text33 CODE 0 16A4 16A4 38 1 2
+text34 CODE 0 16DC 16DC 34 1 2
+text35 CODE 0 1710 1710 34 1 2
+text36 CODE 0 1816 1816 26 1 2
+text37 CODE 0 15F8 15F8 3C 1 2
+text38 CODE 0 17EE 17EE 28 1 2
+text39 CODE 0 189C 189C 16 1 2
+text40 CODE 0 18DC 18DC 14 1 2
+text41 CODE 0 1522 1522 4A 1 2
+text42 CODE 0 18B2 18B2 16 1 2
+text43 CODE 0 15B2 15B2 46 1 2
+text44 CODE 0 14CC 14CC 56 1 2
+text45 CODE 0 18FE 18FE E 1 2
+idataCOMRAM CODE 0 1918 1918 3 1 1
+cstackCOMRAM COMRAM 1 1 1 25 1 1
+temp COMRAM 1 45 45 1 1 1
+intcode CODE 0 8 8 6 1 2
+smallconst SMALLCONST 0 800 800 68 1 2
+dataCOMRAM COMRAM 1 42 42 3 1 1
+bssCOMRAM COMRAM 1 26 26 1C 1 1
+config CONFIG 4 300000 300000 E 1 1
+$C:\Users\juanr\AppData\Local\Temp\xcAsd4c.\driver_tmp_9.obj
+idloc IDLOC 5 200000 200000 8 1 1
+init CODE 0 E E 4 1 2
+reset_vec CODE 0 0 0 4 1 2
+config CONFIG 4 300000 300000 E 1 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 60-7FF 1
+SFR F60-FFF 1
+BANK0 60-FF 1
+BANK1 100-1FF 1
+BANK2 200-2FF 1
+BANK3 300-3FF 1
+BANK4 400-4FF 1
+BANK5 500-5FF 1
+BANK6 600-6FF 1
+BANK7 700-7FF 1
+CONST 4-7 1
+CONST 12-7FF 1
+CONST 191B-191B 1
+CONST 191E-7FFF 1
+SMALLCONST 191B-191B 1
+SMALLCONST 191E-7FFF 1
+CODE 4-7 1
+CODE 12-7FF 1
+CODE 191B-191B 1
+CODE 191E-7FFF 1
+BIGRAM 46-7FF 1
+BIGSFR F60-FFF 1
+COMRAM 46-5F 1
+EEDATA F00000-F000FF 1
+MEDIUMCONST 191B-191B 1
+MEDIUMCONST 191E-7FFF 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\Lab4Micros.X.production.obj
+8 intcode CODE >5246:C:\Users\juanr\AppData\Local\Temp\xcAsd4c.\driver_tmp_1.as
+8 intcode CODE >294:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+18FE text45 CODE >100:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+18FE text45 CODE >102:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+1900 text45 CODE >103:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+1908 text45 CODE >105:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+190A text45 CODE >106:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+14CC text44 CODE >287:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+14CE text44 CODE >288:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+14D0 text44 CODE >289:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+14DE text44 CODE >291:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+14E0 text44 CODE >292:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+14E8 text44 CODE >293:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+14F0 text44 CODE >295:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+14F2 text44 CODE >296:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+14FA text44 CODE >298:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+14FC text44 CODE >299:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+1504 text44 CODE >301:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+1506 text44 CODE >288:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+150A text44 CODE >288:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+1510 text44 CODE >288:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+1516 text44 CODE >288:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+151C text44 CODE >288:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+15B2 text43 CODE >54:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+15B4 text43 CODE >55:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+15BC text43 CODE >56:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+15CC text43 CODE >57:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+15D0 text43 CODE >58:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+15D6 text43 CODE >59:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+15E8 text43 CODE >62:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+15F2 text43 CODE >63:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+15F6 text43 CODE >65:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+18B2 text42 CODE >131:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+18B4 text42 CODE >135:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+18B6 text42 CODE >136:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+18BC text42 CODE >137:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+18C0 text42 CODE >138:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+18C6 text42 CODE >139:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+1522 text41 CODE >112:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+1524 text41 CODE >113:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+152C text41 CODE >114:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+1534 text41 CODE >115:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+153A text41 CODE >116:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+1542 text41 CODE >117:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+154C text41 CODE >120:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+1554 text41 CODE >121:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+155A text41 CODE >122:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+1562 text41 CODE >123:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+156A text41 CODE >128:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+18DC text40 CODE >107:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+18DC text40 CODE >109:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+18DE text40 CODE >110:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+18E4 text40 CODE >111:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+18E8 text40 CODE >112:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+18EE text40 CODE >113:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+189C text39 CODE >243:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+189E text39 CODE >246:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+18A0 text39 CODE >247:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+18A6 text39 CODE >248:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+18AA text39 CODE >249:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+18B0 text39 CODE >250:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+17EE text38 CODE >234:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+17EE text38 CODE >238:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+17F0 text38 CODE >239:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+1800 text38 CODE >240:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+1802 text38 CODE >238:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+15F8 text37 CODE >283:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+15F8 text37 CODE >284:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+1600 text37 CODE >285:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+1604 text37 CODE >286:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+160C text37 CODE >287:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+1612 text37 CODE >288:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+161A text37 CODE >289:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+1622 text37 CODE >290:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+162A text37 CODE >291:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+1632 text37 CODE >292:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+1816 text36 CODE >15:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\Umul16.c
+1816 text36 CODE >37:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\Umul16.c
+1822 text36 CODE >38:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\Umul16.c
+182A text36 CODE >39:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\Umul16.c
+1832 text36 CODE >52:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\Umul16.c
+183A text36 CODE >53:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\Umul16.c
+1710 text35 CODE >106:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+1710 text35 CODE >107:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+172A text35 CODE >108:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+1736 text35 CODE >109:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+1742 text35 CODE >110:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+16DC text34 CODE >174:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+16DC text34 CODE >175:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+16E4 text34 CODE >176:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+16E8 text34 CODE >177:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+16F0 text34 CODE >178:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+16F6 text34 CODE >179:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+16FE text34 CODE >180:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+1706 text34 CODE >181:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+170E text34 CODE >183:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+16A4 text33 CODE >4:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\lbdiv.c
+16A6 text33 CODE >9:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\lbdiv.c
+16A8 text33 CODE >10:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\lbdiv.c
+16AE text33 CODE >11:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\lbdiv.c
+16B2 text33 CODE >12:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\lbdiv.c
+16B4 text33 CODE >13:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\lbdiv.c
+16B8 text33 CODE >14:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\lbdiv.c
+16BA text33 CODE >12:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\lbdiv.c
+16BE text33 CODE >17:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\lbdiv.c
+16C2 text33 CODE >18:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\lbdiv.c
+16CA text33 CODE >19:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\lbdiv.c
+16CE text33 CODE >20:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\lbdiv.c
+16D0 text33 CODE >22:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\lbdiv.c
+16D4 text33 CODE >23:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\lbdiv.c
+16D8 text33 CODE >25:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\lbdiv.c
+16DA text33 CODE >26:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\lbdiv.c
+17C6 text32 CODE >4:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\lbmod.c
+17C8 text32 CODE >9:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\lbmod.c
+17CC text32 CODE >10:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\lbmod.c
+17CE text32 CODE >12:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\lbmod.c
+17D6 text32 CODE >13:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\lbmod.c
+17DA text32 CODE >14:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\lbmod.c
+17E2 text32 CODE >15:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\lbmod.c
+17E6 text32 CODE >16:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\lbmod.c
+17EA text32 CODE >17:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\lbmod.c
+17EC text32 CODE >18:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\lbmod.c
+D50 text31 CODE >140:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+D52 text31 CODE >146:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+D54 text31 CODE >147:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+D56 text31 CODE >148:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+D62 text31 CODE >149:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+D6A text31 CODE >150:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+D6E text31 CODE >151:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+D74 text31 CODE >152:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+D76 text31 CODE >153:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+D8A text31 CODE >154:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+D96 text31 CODE >155:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+D9E text31 CODE >156:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+DA2 text31 CODE >157:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+DA8 text31 CODE >158:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+DB0 text31 CODE >159:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+DB4 text31 CODE >160:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+DBA text31 CODE >161:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+DBC text31 CODE >162:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+DC8 text31 CODE >163:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+DDC text31 CODE >164:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+DE8 text31 CODE >165:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+DF0 text31 CODE >166:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+DF4 text31 CODE >167:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+DFA text31 CODE >168:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+E02 text31 CODE >169:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+E06 text31 CODE >170:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+E0C text31 CODE >171:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+E14 text31 CODE >172:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+E18 text31 CODE >173:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+E1E text31 CODE >174:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+E20 text31 CODE >147:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+E24 text31 CODE >147:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+E2A text31 CODE >147:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+E30 text31 CODE >147:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+11E6 text30 CODE >216:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+11E6 text30 CODE >217:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+11EE text30 CODE >218:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+11F0 text30 CODE >219:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+11F2 text30 CODE >220:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+11F4 text30 CODE >221:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+11F6 text30 CODE >222:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+11FE text30 CODE >223:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+1200 text30 CODE >224:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+1202 text30 CODE >225:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+1204 text30 CODE >226:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+1206 text30 CODE >227:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+120E text30 CODE >228:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+1210 text30 CODE >229:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+1212 text30 CODE >230:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+1214 text30 CODE >231:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+1216 text30 CODE >232:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+1220 text30 CODE >233:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+1222 text30 CODE >234:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+1224 text30 CODE >235:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+1226 text30 CODE >236:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+1228 text30 CODE >237:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+1232 text30 CODE >238:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+1234 text30 CODE >239:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+1236 text30 CODE >240:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+1238 text30 CODE >241:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+123A text30 CODE >242:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+1244 text30 CODE >243:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+1246 text30 CODE >244:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+1248 text30 CODE >245:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+124A text30 CODE >246:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+124C text30 CODE >247:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+1256 text30 CODE >248:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+1258 text30 CODE >249:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+125A text30 CODE >250:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+1912 text29 CODE >254:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+1912 text29 CODE >255:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+1916 text29 CODE >256:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+10EC text28 CODE >7:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awdiv.c
+10EC text28 CODE >13:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awdiv.c
+10EE text28 CODE >14:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awdiv.c
+10F2 text28 CODE >15:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awdiv.c
+10FA text28 CODE >16:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awdiv.c
+10FE text28 CODE >18:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awdiv.c
+1102 text28 CODE >19:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awdiv.c
+110A text28 CODE >20:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awdiv.c
+110E text28 CODE >22:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awdiv.c
+1116 text28 CODE >23:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awdiv.c
+111E text28 CODE >24:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awdiv.c
+1122 text28 CODE >25:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awdiv.c
+1124 text28 CODE >26:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awdiv.c
+112A text28 CODE >27:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awdiv.c
+112C text28 CODE >25:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awdiv.c
+1130 text28 CODE >30:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awdiv.c
+1136 text28 CODE >31:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awdiv.c
+1142 text28 CODE >32:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awdiv.c
+114A text28 CODE >33:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awdiv.c
+114C text28 CODE >35:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awdiv.c
+1152 text28 CODE >36:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awdiv.c
+1156 text28 CODE >38:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awdiv.c
+115C text28 CODE >39:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awdiv.c
+1164 text28 CODE >40:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awdiv.c
+116C text28 CODE >41:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awdiv.c
+13B0 text27 CODE >7:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awmod.c
+13B0 text27 CODE >12:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awmod.c
+13B2 text27 CODE >13:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awmod.c
+13B6 text27 CODE >14:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awmod.c
+13BE text27 CODE >15:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awmod.c
+13C2 text27 CODE >17:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awmod.c
+13C6 text27 CODE >18:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awmod.c
+13CE text27 CODE >19:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awmod.c
+13D6 text27 CODE >20:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awmod.c
+13DA text27 CODE >21:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awmod.c
+13DC text27 CODE >22:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awmod.c
+13E2 text27 CODE >23:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awmod.c
+13E4 text27 CODE >21:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awmod.c
+13E8 text27 CODE >26:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awmod.c
+13F4 text27 CODE >27:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awmod.c
+13FC text27 CODE >28:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awmod.c
+1402 text27 CODE >29:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awmod.c
+1406 text27 CODE >31:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awmod.c
+140C text27 CODE >32:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awmod.c
+1414 text27 CODE >33:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awmod.c
+141C text27 CODE >34:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awmod.c
+F02 text26 CODE >185:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+F02 text26 CODE >186:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+F0A text26 CODE >187:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+F0E text26 CODE >188:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+F16 text26 CODE >189:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+F1E text26 CODE >190:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+F22 text26 CODE >191:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+F28 text26 CODE >192:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+F44 text26 CODE >193:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+F64 text26 CODE >194:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+F68 text26 CODE >195:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+F6C text26 CODE >197:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+F70 text26 CODE >198:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+F78 text26 CODE >199:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+F82 text26 CODE >200:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+F88 text26 CODE >201:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+F90 text26 CODE >202:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+F9A text26 CODE >203:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+FA8 text26 CODE >204:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+FAC text26 CODE >205:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+FB4 text26 CODE >206:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+FBA text26 CODE >207:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+FC2 text26 CODE >208:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+FCC text26 CODE >212:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+FCC text26 CODE >214:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+B3E text25 CODE >130:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+B3E text25 CODE >131:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+B4E text25 CODE >132:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+B6C text25 CODE >134:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+B8A text25 CODE >135:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+B92 text25 CODE >136:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+B9A text25 CODE >137:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+BA2 text25 CODE >138:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+BA6 text25 CODE >140:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+BAE text25 CODE >141:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+BB8 text25 CODE >142:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+BBE text25 CODE >143:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+BC6 text25 CODE >144:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+BD0 text25 CODE >145:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+BD8 text25 CODE >146:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+BDA text25 CODE >148:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+BDE text25 CODE >149:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+BE6 text25 CODE >150:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+BEE text25 CODE >151:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+C04 text25 CODE >152:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+C0A text25 CODE >155:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+C12 text25 CODE >157:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+C16 text25 CODE >158:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+C1E text25 CODE >159:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+C24 text25 CODE >160:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+C2C text25 CODE >161:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+C34 text25 CODE >163:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+C3C text25 CODE >164:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+C44 text25 CODE >165:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+C4C text25 CODE >166:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+C54 text25 CODE >167:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+C5C text25 CODE >168:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+C60 text25 CODE >169:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+C64 text25 CODE >171:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+C68 text25 CODE >172:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+183C text24 CODE >258:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+183C text24 CODE >259:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+183E text24 CODE >260:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+1840 text24 CODE >261:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+1842 text24 CODE >262:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+184A text24 CODE >263:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+184E text24 CODE >264:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+1856 text24 CODE >265:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+141E text23 CODE >267:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+141E text23 CODE >268:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+1426 text23 CODE >269:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+142E text23 CODE >270:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+1436 text23 CODE >271:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+143E text23 CODE >272:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+1442 text23 CODE >273:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+1446 text23 CODE >275:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+144A text23 CODE >276:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+1452 text23 CODE >277:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+145C text23 CODE >278:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+1462 text23 CODE >279:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+146A text23 CODE >280:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+1474 text23 CODE >281:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+868 intcode_body CODE >294:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+882 intcode_body CODE >295:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+88A intcode_body CODE >296:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+88E intcode_body CODE >297:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+896 intcode_body CODE >298:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+898 intcode_body CODE >299:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+89C intcode_body CODE >300:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+8AC intcode_body CODE >301:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+8BC intcode_body CODE >302:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+8CC intcode_body CODE >303:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+8DA intcode_body CODE >305:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+8DE intcode_body CODE >306:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+8EE intcode_body CODE >307:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+8FE intcode_body CODE >308:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+90E intcode_body CODE >309:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+91C intcode_body CODE >311:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+920 intcode_body CODE >312:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+930 intcode_body CODE >313:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+940 intcode_body CODE >314:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+950 intcode_body CODE >315:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+95E intcode_body CODE >317:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+962 intcode_body CODE >318:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+970 intcode_body CODE >319:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+980 intcode_body CODE >320:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+98E intcode_body CODE >321:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+99A intcode_body CODE >322:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+99A intcode_body CODE >327:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+99E intcode_body CODE >328:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+9AE intcode_body CODE >329:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+9B0 intcode_body CODE >331:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+9B4 intcode_body CODE >332:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+9B6 intcode_body CODE >333:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+9BE intcode_body CODE >334:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+9C8 intcode_body CODE >337:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+18F0 text21 CODE >100:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+18F0 text21 CODE >102:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+18F2 text21 CODE >103:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+18FA text21 CODE >105:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+18FC text21 CODE >106:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+1476 text20 CODE >287:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+1478 text20 CODE >288:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+147A text20 CODE >289:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+1488 text20 CODE >291:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+148A text20 CODE >292:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+1492 text20 CODE >293:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+149A text20 CODE >295:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+149C text20 CODE >296:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+14A4 text20 CODE >298:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+14A6 text20 CODE >299:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+14AE text20 CODE >301:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+14B0 text20 CODE >288:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+14B4 text20 CODE >288:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+14BA text20 CODE >288:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+14C0 text20 CODE >288:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+14C6 text20 CODE >288:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+156C text19 CODE >54:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+156E text19 CODE >55:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+1576 text19 CODE >56:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+1586 text19 CODE >57:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+158A text19 CODE >58:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+1590 text19 CODE >59:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+15A2 text19 CODE >62:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+15AC text19 CODE >63:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+15B0 text19 CODE >65:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+18C8 text18 CODE >107:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+18C8 text18 CODE >109:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+18CA text18 CODE >110:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+18D0 text18 CODE >111:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+18D4 text18 CODE >112:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+18DA text18 CODE >113:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+191C text17 CODE >114:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+191C text17 CODE >117:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+1744 text16 CODE >118:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+1746 text16 CODE >120:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+1748 text16 CODE >121:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+174E text16 CODE >122:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+1754 text16 CODE >123:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+175E text16 CODE >124:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+1764 text16 CODE >126:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+176A text16 CODE >127:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+176E text16 CODE >128:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+1774 text16 CODE >130:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+12D0 text15 CODE >307:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+12D0 text15 CODE >308:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+12D6 text15 CODE >309:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+12D8 text15 CODE >310:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+12DE text15 CODE >311:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+12E4 text15 CODE >312:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+12E8 text15 CODE >313:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+12EE text15 CODE >314:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+12F2 text15 CODE >315:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+12F8 text15 CODE >316:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+12FC text15 CODE >317:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+1302 text15 CODE >318:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+1306 text15 CODE >319:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+130C text15 CODE >320:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+1310 text15 CODE >321:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+1316 text15 CODE >322:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+131A text15 CODE >323:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+1320 text15 CODE >324:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+1324 text15 CODE >325:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+132A text15 CODE >326:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+132E text15 CODE >327:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+1330 text15 CODE >328:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+1336 text15 CODE >329:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+133A text15 CODE >330:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+1340 text15 CODE >331:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+125E text14 CODE >333:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+125E text14 CODE >334:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+1264 text14 CODE >335:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+1266 text14 CODE >336:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+126C text14 CODE >337:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+1272 text14 CODE >338:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+1276 text14 CODE >339:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+127C text14 CODE >340:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+1280 text14 CODE >341:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+1286 text14 CODE >342:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+128A text14 CODE >343:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+1290 text14 CODE >344:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+1294 text14 CODE >345:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+129A text14 CODE >346:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+129E text14 CODE >347:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+12A4 text14 CODE >348:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+12A8 text14 CODE >349:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+12AE text14 CODE >350:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+12B2 text14 CODE >351:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+12B8 text14 CODE >352:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+12BC text14 CODE >353:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+12BE text14 CODE >354:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+12C4 text14 CODE >355:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+12C8 text14 CODE >356:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+12CE text14 CODE >357:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+1858 text13 CODE >50:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+185A text13 CODE >51:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+186A text13 CODE >52:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+186E text13 CODE >53:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+FCE text12 CODE >66:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+FCE text12 CODE >68:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+FD0 text12 CODE >69:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+FD8 text12 CODE >70:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+FE0 text12 CODE >72:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+FE4 text12 CODE >73:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+FE8 text12 CODE >74:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+FEE text12 CODE >75:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+FF6 text12 CODE >76:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+FFE text12 CODE >78:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+1002 text12 CODE >79:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+1006 text12 CODE >80:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+100C text12 CODE >81:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+1014 text12 CODE >82:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+101C text12 CODE >84:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+1020 text12 CODE >85:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+1024 text12 CODE >86:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+102A text12 CODE >87:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+1032 text12 CODE >88:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+103A text12 CODE >89:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+103E text12 CODE >90:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+1044 text12 CODE >91:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+104A text12 CODE >92:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+104E text12 CODE >93:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+1054 text12 CODE >95:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+1058 text12 CODE >96:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+105E text12 CODE >97:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+1062 text12 CODE >98:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+1068 text12 CODE >99:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+1886 text11 CODE >243:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+1888 text11 CODE >246:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+188A text11 CODE >247:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+1890 text11 CODE >248:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+1894 text11 CODE >249:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+189A text11 CODE >250:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+166C text10 CODE >4:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\lbdiv.c
+166E text10 CODE >9:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\lbdiv.c
+1670 text10 CODE >10:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\lbdiv.c
+1676 text10 CODE >11:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\lbdiv.c
+167A text10 CODE >12:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\lbdiv.c
+167C text10 CODE >13:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\lbdiv.c
+1680 text10 CODE >14:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\lbdiv.c
+1682 text10 CODE >12:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\lbdiv.c
+1686 text10 CODE >17:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\lbdiv.c
+168A text10 CODE >18:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\lbdiv.c
+1692 text10 CODE >19:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\lbdiv.c
+1696 text10 CODE >20:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\lbdiv.c
+1698 text10 CODE >22:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\lbdiv.c
+169C text10 CODE >23:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\lbdiv.c
+16A0 text10 CODE >25:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\lbdiv.c
+16A2 text10 CODE >26:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\lbdiv.c
+179E text9 CODE >4:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\lbmod.c
+17A0 text9 CODE >9:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\lbmod.c
+17A4 text9 CODE >10:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\lbmod.c
+17A6 text9 CODE >12:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\lbmod.c
+17AE text9 CODE >13:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\lbmod.c
+17B2 text9 CODE >14:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\lbmod.c
+17BA text9 CODE >15:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\lbmod.c
+17BE text9 CODE >16:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\lbmod.c
+17C2 text9 CODE >17:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\lbmod.c
+17C4 text9 CODE >18:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\lbmod.c
+C6A text8 CODE >140:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+C6C text8 CODE >146:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+C6E text8 CODE >147:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+C70 text8 CODE >148:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+C7C text8 CODE >149:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+C84 text8 CODE >150:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+C88 text8 CODE >151:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+C8E text8 CODE >152:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+C90 text8 CODE >153:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+CA4 text8 CODE >154:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+CB0 text8 CODE >155:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+CB8 text8 CODE >156:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+CBC text8 CODE >157:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+CC2 text8 CODE >158:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+CCA text8 CODE >159:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+CCE text8 CODE >160:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+CD4 text8 CODE >161:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+CD6 text8 CODE >162:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+CE2 text8 CODE >163:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+CF6 text8 CODE >164:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+D02 text8 CODE >165:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+D0A text8 CODE >166:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+D0E text8 CODE >167:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+D14 text8 CODE >168:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+D1C text8 CODE >169:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+D20 text8 CODE >170:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+D26 text8 CODE >171:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+D2E text8 CODE >172:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+D32 text8 CODE >173:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+D38 text8 CODE >174:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+D3A text8 CODE >147:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+D3E text8 CODE >147:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+D44 text8 CODE >147:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+D4A text8 CODE >147:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+1870 text7 CODE >131:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+1872 text7 CODE >135:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+1874 text7 CODE >136:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+187A text7 CODE >137:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+187E text7 CODE >138:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+1884 text7 CODE >139:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+1776 text6 CODE >234:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+1776 text6 CODE >238:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+1778 text6 CODE >239:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+1788 text6 CODE >240:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+178A text6 CODE >238:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\LibLCDXC9.h
+116E text5 CODE >216:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+116E text5 CODE >217:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+1176 text5 CODE >218:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+1178 text5 CODE >219:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+117A text5 CODE >220:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+117C text5 CODE >221:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+117E text5 CODE >222:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+1186 text5 CODE >223:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+1188 text5 CODE >224:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+118A text5 CODE >225:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+118C text5 CODE >226:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+118E text5 CODE >227:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+1196 text5 CODE >228:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+1198 text5 CODE >229:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+119A text5 CODE >230:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+119C text5 CODE >231:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+119E text5 CODE >232:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+11A8 text5 CODE >233:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+11AA text5 CODE >234:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+11AC text5 CODE >235:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+11AE text5 CODE >236:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+11B0 text5 CODE >237:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+11BA text5 CODE >238:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+11BC text5 CODE >239:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+11BE text5 CODE >240:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+11C0 text5 CODE >241:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+11C2 text5 CODE >242:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+11CC text5 CODE >243:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+11CE text5 CODE >244:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+11D0 text5 CODE >245:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+11D2 text5 CODE >246:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+11D4 text5 CODE >247:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+11DE text5 CODE >248:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+11E0 text5 CODE >249:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+11E2 text5 CODE >250:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+190C text4 CODE >254:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+190C text4 CODE >255:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+1910 text4 CODE >256:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+106A text3 CODE >7:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awdiv.c
+106A text3 CODE >13:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awdiv.c
+106C text3 CODE >14:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awdiv.c
+1070 text3 CODE >15:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awdiv.c
+1078 text3 CODE >16:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awdiv.c
+107C text3 CODE >18:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awdiv.c
+1080 text3 CODE >19:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awdiv.c
+1088 text3 CODE >20:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awdiv.c
+108C text3 CODE >22:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awdiv.c
+1094 text3 CODE >23:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awdiv.c
+109C text3 CODE >24:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awdiv.c
+10A0 text3 CODE >25:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awdiv.c
+10A2 text3 CODE >26:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awdiv.c
+10A8 text3 CODE >27:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awdiv.c
+10AA text3 CODE >25:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awdiv.c
+10AE text3 CODE >30:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awdiv.c
+10B4 text3 CODE >31:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awdiv.c
+10C0 text3 CODE >32:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awdiv.c
+10C8 text3 CODE >33:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awdiv.c
+10CA text3 CODE >35:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awdiv.c
+10D0 text3 CODE >36:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awdiv.c
+10D4 text3 CODE >38:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awdiv.c
+10DA text3 CODE >39:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awdiv.c
+10E2 text3 CODE >40:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awdiv.c
+10EA text3 CODE >41:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awdiv.c
+1342 text2 CODE >7:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awmod.c
+1342 text2 CODE >12:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awmod.c
+1344 text2 CODE >13:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awmod.c
+1348 text2 CODE >14:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awmod.c
+1350 text2 CODE >15:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awmod.c
+1354 text2 CODE >17:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awmod.c
+1358 text2 CODE >18:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awmod.c
+1360 text2 CODE >19:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awmod.c
+1368 text2 CODE >20:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awmod.c
+136C text2 CODE >21:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awmod.c
+136E text2 CODE >22:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awmod.c
+1374 text2 CODE >23:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awmod.c
+1376 text2 CODE >21:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awmod.c
+137A text2 CODE >26:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awmod.c
+1386 text2 CODE >27:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awmod.c
+138E text2 CODE >28:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awmod.c
+1394 text2 CODE >29:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awmod.c
+1398 text2 CODE >31:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awmod.c
+139E text2 CODE >32:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awmod.c
+13A6 text2 CODE >33:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awmod.c
+13AE text2 CODE >34:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c90\common\awmod.c
+E36 text1 CODE >185:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+E36 text1 CODE >186:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+E3E text1 CODE >187:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+E42 text1 CODE >188:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+E4A text1 CODE >189:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+E52 text1 CODE >190:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+E56 text1 CODE >191:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+E5C text1 CODE >192:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+E78 text1 CODE >193:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+E98 text1 CODE >194:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+E9C text1 CODE >195:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+EA0 text1 CODE >197:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+EA4 text1 CODE >198:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+EAC text1 CODE >199:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+EB6 text1 CODE >200:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+EBC text1 CODE >201:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+EC4 text1 CODE >202:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+ECE text1 CODE >203:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+EDC text1 CODE >204:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+EE0 text1 CODE >205:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+EE8 text1 CODE >206:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+EEE text1 CODE >207:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+EF6 text1 CODE >208:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+F00 text1 CODE >212:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+F00 text1 CODE >214:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+9E4 text0 CODE >38:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+9E4 text0 CODE >39:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+9E8 text0 CODE >40:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+9EA text0 CODE >41:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+9EC text0 CODE >42:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+9EE text0 CODE >43:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+9F0 text0 CODE >44:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+9F2 text0 CODE >45:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+9F4 text0 CODE >46:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+9F6 text0 CODE >47:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+9FA text0 CODE >48:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+9FC text0 CODE >49:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+A0C text0 CODE >50:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+A14 text0 CODE >51:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+A18 text0 CODE >52:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+A1A text0 CODE >53:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+A1C text0 CODE >54:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+A1E text0 CODE >55:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+A20 text0 CODE >56:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+A22 text0 CODE >57:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+A24 text0 CODE >60:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+A26 text0 CODE >61:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+A28 text0 CODE >62:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+A2A text0 CODE >65:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+A40 text0 CODE >66:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+A46 text0 CODE >67:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+A4A text0 CODE >71:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+A54 text0 CODE >73:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+A5C text0 CODE >74:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+A60 text0 CODE >75:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+A66 text0 CODE >76:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+A6A text0 CODE >77:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+A70 text0 CODE >78:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+A86 text0 CODE >79:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+A8A text0 CODE >82:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+A92 text0 CODE >83:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+A98 text0 CODE >84:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+AA0 text0 CODE >86:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+AA2 text0 CODE >87:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+AB2 text0 CODE >88:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+AB6 text0 CODE >89:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+AC6 text0 CODE >90:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+ACA text0 CODE >91:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+ADA text0 CODE >92:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+ADE text0 CODE >93:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+AEE text0 CODE >94:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+AF0 text0 CODE >95:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+B00 text0 CODE >96:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+B04 text0 CODE >97:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+B14 text0 CODE >98:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+B18 text0 CODE >99:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+B28 text0 CODE >100:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+B2C text0 CODE >101:E:\UNAL\2024-1S (VIII)\Microcontroladores\Lab4\Lab4Micros.X\PruebaLCD.c
+1634 cinit CODE >799:C:\Users\juanr\AppData\Local\Temp\xcAsd4c.\driver_tmp_1.as
+1634 cinit CODE >801:C:\Users\juanr\AppData\Local\Temp\xcAsd4c.\driver_tmp_1.as
+1634 cinit CODE >804:C:\Users\juanr\AppData\Local\Temp\xcAsd4c.\driver_tmp_1.as
+1634 cinit CODE >874:C:\Users\juanr\AppData\Local\Temp\xcAsd4c.\driver_tmp_1.as
+1636 cinit CODE >875:C:\Users\juanr\AppData\Local\Temp\xcAsd4c.\driver_tmp_1.as
+1638 cinit CODE >876:C:\Users\juanr\AppData\Local\Temp\xcAsd4c.\driver_tmp_1.as
+163A cinit CODE >877:C:\Users\juanr\AppData\Local\Temp\xcAsd4c.\driver_tmp_1.as
+163C cinit CODE >878:C:\Users\juanr\AppData\Local\Temp\xcAsd4c.\driver_tmp_1.as
+163E cinit CODE >879:C:\Users\juanr\AppData\Local\Temp\xcAsd4c.\driver_tmp_1.as
+1640 cinit CODE >880:C:\Users\juanr\AppData\Local\Temp\xcAsd4c.\driver_tmp_1.as
+1642 cinit CODE >881:C:\Users\juanr\AppData\Local\Temp\xcAsd4c.\driver_tmp_1.as
+1646 cinit CODE >882:C:\Users\juanr\AppData\Local\Temp\xcAsd4c.\driver_tmp_1.as
+1648 cinit CODE >883:C:\Users\juanr\AppData\Local\Temp\xcAsd4c.\driver_tmp_1.as
+164C cinit CODE >884:C:\Users\juanr\AppData\Local\Temp\xcAsd4c.\driver_tmp_1.as
+164E cinit CODE >885:C:\Users\juanr\AppData\Local\Temp\xcAsd4c.\driver_tmp_1.as
+1652 cinit CODE >889:C:\Users\juanr\AppData\Local\Temp\xcAsd4c.\driver_tmp_1.as
+1656 cinit CODE >890:C:\Users\juanr\AppData\Local\Temp\xcAsd4c.\driver_tmp_1.as
+1658 cinit CODE >891:C:\Users\juanr\AppData\Local\Temp\xcAsd4c.\driver_tmp_1.as
+1658 cinit CODE >892:C:\Users\juanr\AppData\Local\Temp\xcAsd4c.\driver_tmp_1.as
+165A cinit CODE >893:C:\Users\juanr\AppData\Local\Temp\xcAsd4c.\driver_tmp_1.as
+165C cinit CODE >894:C:\Users\juanr\AppData\Local\Temp\xcAsd4c.\driver_tmp_1.as
+165E cinit CODE >900:C:\Users\juanr\AppData\Local\Temp\xcAsd4c.\driver_tmp_1.as
+165E cinit CODE >902:C:\Users\juanr\AppData\Local\Temp\xcAsd4c.\driver_tmp_1.as
+1660 cinit CODE >903:C:\Users\juanr\AppData\Local\Temp\xcAsd4c.\driver_tmp_1.as
+1662 cinit CODE >905:C:\Users\juanr\AppData\Local\Temp\xcAsd4c.\driver_tmp_1.as
+1664 cinit CODE >906:C:\Users\juanr\AppData\Local\Temp\xcAsd4c.\driver_tmp_1.as
+1666 cinit CODE >907:C:\Users\juanr\AppData\Local\Temp\xcAsd4c.\driver_tmp_1.as
+1668 cinit CODE >908:C:\Users\juanr\AppData\Local\Temp\xcAsd4c.\driver_tmp_1.as
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+_a 2C 0 COMRAM 1 bssCOMRAM dist/default/production\Lab4Micros.X.production.obj
+_b 2A 0 COMRAM 1 bssCOMRAM dist/default/production\Lab4Micros.X.production.obj
+_d 2E 0 COMRAM 1 bssCOMRAM dist/default/production\Lab4Micros.X.production.obj
+_u 30 0 COMRAM 1 bssCOMRAM dist/default/production\Lab4Micros.X.production.obj
+i2_RGB 11E6 0 CODE 0 text30 dist/default/production\Lab4Micros.X.production.obj
+i2_SEG 1912 0 CODE 0 text29 dist/default/production\Lab4Micros.X.production.obj
+___awdiv@counter 1B 0 COMRAM 1 cstackCOMRAM dist/default/production\Lab4Micros.X.production.obj
+__end_of_InicializaLCD 106A 0 CODE 0 text12 dist/default/production\Lab4Micros.X.production.obj
+__Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\Lab4Micros.X.production.obj
+i2___lbdiv@dividend 6 0 COMRAM 1 cstackCOMRAM dist/default/production\Lab4Micros.X.production.obj
+EnviaDato@a 1A 0 COMRAM 1 cstackCOMRAM dist/default/production\Lab4Micros.X.production.obj
+__Hspace_0 191E 0 ABS 0 - dist/default/production\Lab4Micros.X.production.obj
+__Hspace_1 46 0 ABS 0 - dist/default/production\Lab4Micros.X.production.obj
+__Hspace_2 0 0 ABS 0 - dist/default/production\Lab4Micros.X.production.obj
+__Hspace_4 60000E 0 ABS 0 - dist/default/production\Lab4Micros.X.production.obj
+i2_HabilitaLCD 18FE 0 CODE 0 text45 dist/default/production\Lab4Micros.X.production.obj
+_cuenMos 40 0 COMRAM 1 bssCOMRAM dist/default/production\Lab4Micros.X.production.obj
+_cuenObj 28 0 COMRAM 1 bssCOMRAM dist/default/production\Lab4Micros.X.production.obj
+i2MensajeLCD_Var@a 6 0 COMRAM 1 cstackCOMRAM dist/default/production\Lab4Micros.X.production.obj
+__end_of_borrarTexto 1710 0 CODE 0 text34 dist/default/production\Lab4Micros.X.production.obj
+__Hibigdata 0 0 CODE 0 ibigdata dist/default/production\Lab4Micros.X.production.obj
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\juanr\AppData\Local\Temp\xcAsd4c.\driver_tmp_9.obj
+__end_of_EnviaDato 15B2 0 CODE 0 text19 dist/default/production\Lab4Micros.X.production.obj
+__Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\Lab4Micros.X.production.obj
+_ok B3E 0 CODE 0 text25 dist/default/production\Lab4Micros.X.production.obj
+__L__absolute__ 0 0 ABS 0 __absolute__ dist/default/production\Lab4Micros.X.production.obj
+__Lsmallconst 800 0 SMALLCONST 0 smallconst dist/default/production\Lab4Micros.X.production.obj
+_LATB F8A 0 ABS 0 - dist/default/production\Lab4Micros.X.production.obj
+_LATD F8C 0 ABS 0 - dist/default/production\Lab4Micros.X.production.obj
+_RBIE 7F93 0 ABS 0 - dist/default/production\Lab4Micros.X.production.obj
+_RBIF 7F90 0 ABS 0 - dist/default/production\Lab4Micros.X.production.obj
+_RBPU 7F8F 0 ABS 0 - dist/default/production\Lab4Micros.X.production.obj
+_TMR0 FD6 0 ABS 0 - dist/default/production\Lab4Micros.X.production.obj
+___sp 0 0 STACK 2 stack C:\Users\juanr\AppData\Local\Temp\xcAsd4c.\driver_tmp_9.obj
+_main 9E4 0 CODE 0 text0 dist/default/production\Lab4Micros.X.production.obj
+btemp 45 0 COMRAM 1 temp dist/default/production\Lab4Micros.X.production.obj
+___stack_hi 0 0 STACK 2 stack C:\Users\juanr\AppData\Local\Temp\xcAsd4c.\driver_tmp_9.obj
+___stack_lo 0 0 STACK 2 stack C:\Users\juanr\AppData\Local\Temp\xcAsd4c.\driver_tmp_9.obj
+MensajeLCD_Var@a 1C 0 COMRAM 1 cstackCOMRAM dist/default/production\Lab4Micros.X.production.obj
+_piezFalt 26 0 COMRAM 1 bssCOMRAM dist/default/production\Lab4Micros.X.production.obj
+start E 0 CODE 0 init C:\Users\juanr\AppData\Local\Temp\xcAsd4c.\driver_tmp_9.obj
+__HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\Lab4Micros.X.production.obj
+__end_of_RetardoLCD 14CC 0 CODE 0 text20 dist/default/production\Lab4Micros.X.production.obj
+?___wmul 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Lab4Micros.X.production.obj
+__end_of_CaracterQbert 12D0 0 CODE 0 text14 dist/default/production\Lab4Micros.X.production.obj
+_EnviaDato 156C 0 CODE 0 text19 dist/default/production\Lab4Micros.X.production.obj
+__end_of_escribirDig 156C 0 CODE 0 text41 dist/default/production\Lab4Micros.X.production.obj
+_EscribeLCD_n8 C6A 0 CODE 0 text8 dist/default/production\Lab4Micros.X.production.obj
+__Hpowerup E 0 CODE 0 powerup dist/default/production\Lab4Micros.X.production.obj
+___awmod@sign 1C 0 COMRAM 1 cstackCOMRAM dist/default/production\Lab4Micros.X.production.obj
+ttemp5 46 0 COMRAM 1 temp dist/default/production\Lab4Micros.X.production.obj
+ttemp6 49 0 COMRAM 1 temp dist/default/production\Lab4Micros.X.production.obj
+ttemp7 4D 0 COMRAM 1 temp dist/default/production\Lab4Micros.X.production.obj
+__HdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\Lab4Micros.X.production.obj
+__end_ofi2_BorraLCD 18F0 0 CODE 0 text40 dist/default/production\Lab4Micros.X.production.obj
+__accesstop 60 0 ABS 0 - C:\Users\juanr\AppData\Local\Temp\xcAsd4c.\driver_tmp_9.obj
+intlevel0 0 0 CODE 0 text C:\Users\juanr\AppData\Local\Temp\xcAsd4c.\driver_tmp_9.obj
+intlevel1 0 0 CODE 0 text C:\Users\juanr\AppData\Local\Temp\xcAsd4c.\driver_tmp_9.obj
+intlevel2 0 0 CODE 0 text C:\Users\juanr\AppData\Local\Temp\xcAsd4c.\driver_tmp_9.obj
+intlevel3 0 0 CODE 0 text C:\Users\juanr\AppData\Local\Temp\xcAsd4c.\driver_tmp_9.obj
+__LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\Lab4Micros.X.production.obj
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\Lab4Micros.X.production.obj
+wtemp8 46 0 COMRAM 1 temp dist/default/production\Lab4Micros.X.production.obj
+_luzFondo 1710 0 CODE 0 text35 dist/default/production\Lab4Micros.X.production.obj
+__Hifardata 0 0 CODE 0 ifardata dist/default/production\Lab4Micros.X.production.obj
+___awdiv@sign 1C 0 COMRAM 1 cstackCOMRAM dist/default/production\Lab4Micros.X.production.obj
+__Hclrtext 0 0 ABS 0 clrtext dist/default/production\Lab4Micros.X.production.obj
+__pidataCOMRAM 1918 0 CODE 0 idataCOMRAM dist/default/production\Lab4Micros.X.production.obj
+__end_of_luzFondo 1744 0 CODE 0 text35 dist/default/production\Lab4Micros.X.production.obj
+___wmul@multiplicand 3 0 COMRAM 1 cstackCOMRAM dist/default/production\Lab4Micros.X.production.obj
+_ADCON1 FC1 0 ABS 0 - dist/default/production\Lab4Micros.X.production.obj
+i2___lbmod@divisor 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Lab4Micros.X.production.obj
+___awdiv@dividend 17 0 COMRAM 1 cstackCOMRAM dist/default/production\Lab4Micros.X.production.obj
+___inthi_sp 0 0 STACK 2 stack C:\Users\juanr\AppData\Local\Temp\xcAsd4c.\driver_tmp_9.obj
+___intlo_sp 0 0 STACK 2 stack C:\Users\juanr\AppData\Local\Temp\xcAsd4c.\driver_tmp_9.obj
+_DireccionaLCD 1886 0 CODE 0 text11 dist/default/production\Lab4Micros.X.production.obj
+__LdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\Lab4Micros.X.production.obj
+i2_MensajeLCD_Var 17EE 0 CODE 0 text38 dist/default/production\Lab4Micros.X.production.obj
+i2___awdiv@divisor 3 0 COMRAM 1 cstackCOMRAM dist/default/production\Lab4Micros.X.production.obj
+i2EscribeLCD_n8@decena B 0 COMRAM 1 cstackCOMRAM dist/default/production\Lab4Micros.X.production.obj
+__Hintcode_body 0 0 ABS 0 intcode_body dist/default/production\Lab4Micros.X.production.obj
+__end_of___wmul 183C 0 CODE 0 text36 dist/default/production\Lab4Micros.X.production.obj
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\Lab4Micros.X.production.obj
+___lbdiv@dividend 1C 0 COMRAM 1 cstackCOMRAM dist/default/production\Lab4Micros.X.production.obj
+___lbmod@divisor 17 0 COMRAM 1 cstackCOMRAM dist/default/production\Lab4Micros.X.production.obj
+_flagEscribir 3E 0 COMRAM 1 bssCOMRAM dist/default/production\Lab4Micros.X.production.obj
+_interfaz 44 0 COMRAM 1 dataCOMRAM dist/default/production\Lab4Micros.X.production.obj
+__Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\Lab4Micros.X.production.obj
+__Hintcodelo E 0 CODE 0 intcodelo dist/default/production\Lab4Micros.X.production.obj
+___awdiv@divisor 19 0 COMRAM 1 cstackCOMRAM dist/default/production\Lab4Micros.X.production.obj
+__end_of___awdiv 10EC 0 CODE 0 text3 dist/default/production\Lab4Micros.X.production.obj
+__end_of___awmod 13B0 0 CODE 0 text2 dist/default/production\Lab4Micros.X.production.obj
+__end_of___lbdiv 16A4 0 CODE 0 text10 dist/default/production\Lab4Micros.X.production.obj
+__end_of___lbmod 17C6 0 CODE 0 text9 dist/default/production\Lab4Micros.X.production.obj
+DireccionaLCD@a 1B 0 COMRAM 1 cstackCOMRAM dist/default/production\Lab4Micros.X.production.obj
+?i2___awdiv 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Lab4Micros.X.production.obj
+?i2___awmod 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Lab4Micros.X.production.obj
+__LidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/production\Lab4Micros.X.production.obj
+__end_ofi2_HabilitaLCD 190C 0 CODE 0 text45 dist/default/production\Lab4Micros.X.production.obj
+__Lintcodelo E 0 CODE 0 intcodelo dist/default/production\Lab4Micros.X.production.obj
+start_initialization 1634 0 CODE 0 cinit dist/default/production\Lab4Micros.X.production.obj
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\Lab4Micros.X.production.obj
+i2EscribeLCD_n8@a D 0 COMRAM 1 cstackCOMRAM dist/default/production\Lab4Micros.X.production.obj
+i2EscribeLCD_n8@b 9 0 COMRAM 1 cstackCOMRAM dist/default/production\Lab4Micros.X.production.obj
+_CursorAInicio 191C 0 CODE 0 text17 dist/default/production\Lab4Micros.X.production.obj
+___rparam_used 1 0 ABS 0 - dist/default/production\Lab4Micros.X.production.obj
+_flagInicio 3A 0 COMRAM 1 bssCOMRAM dist/default/production\Lab4Micros.X.production.obj
+__end_of_ok C6A 0 CODE 0 text25 dist/default/production\Lab4Micros.X.production.obj
+i2_EnviaDato 15B2 0 CODE 0 text43 dist/default/production\Lab4Micros.X.production.obj
+_CaracterCara 12D0 0 CODE 0 text15 dist/default/production\Lab4Micros.X.production.obj
+i2___lbdiv@counter 7 0 COMRAM 1 cstackCOMRAM dist/default/production\Lab4Micros.X.production.obj
+_TMR0IE 7F95 0 ABS 0 - dist/default/production\Lab4Micros.X.production.obj
+_TMR0IF 7F92 0 ABS 0 - dist/default/production\Lab4Micros.X.production.obj
+_TMR0ON 7EAF 0 ABS 0 - dist/default/production\Lab4Micros.X.production.obj
+_TRISC1 7CA1 0 ABS 0 - dist/default/production\Lab4Micros.X.production.obj
+_TRISE0 7CB0 0 ABS 0 - dist/default/production\Lab4Micros.X.production.obj
+_TRISE1 7CB1 0 ABS 0 - dist/default/production\Lab4Micros.X.production.obj
+_TRISE2 7CB2 0 ABS 0 - dist/default/production\Lab4Micros.X.production.obj
+__end_of_EscribeLCD_n8 D50 0 CODE 0 text8 dist/default/production\Lab4Micros.X.production.obj
+i2EscribeLCD_n8@unidad C 0 COMRAM 1 cstackCOMRAM dist/default/production\Lab4Micros.X.production.obj
+isa$xinst 0 0 ABS 0 - C:\Users\juanr\AppData\Local\Temp\xcAsd4c.\driver_tmp_9.obj
+__end_ofi2_MensajeLCD_Var 1816 0 CODE 0 text38 dist/default/production\Lab4Micros.X.production.obj
+__end_of_reiCon 1476 0 CODE 0 text23 dist/default/production\Lab4Micros.X.production.obj
+___lbdiv@counter 1D 0 COMRAM 1 cstackCOMRAM dist/default/production\Lab4Micros.X.production.obj
+__Hbank0 0 0 ABS 0 bank0 dist/default/production\Lab4Micros.X.production.obj
+__Hbank1 0 0 ABS 0 bank1 dist/default/production\Lab4Micros.X.production.obj
+__Hbank2 0 0 ABS 0 bank2 dist/default/production\Lab4Micros.X.production.obj
+__Hbank3 0 0 ABS 0 bank3 dist/default/production\Lab4Micros.X.production.obj
+__Hbank4 0 0 ABS 0 bank4 dist/default/production\Lab4Micros.X.production.obj
+__Hbank5 0 0 ABS 0 bank5 dist/default/production\Lab4Micros.X.production.obj
+__Hbank6 0 0 ABS 0 bank6 dist/default/production\Lab4Micros.X.production.obj
+__Hbank7 0 0 ABS 0 bank7 dist/default/production\Lab4Micros.X.production.obj
+__Hcinit 0 0 ABS 0 cinit dist/default/production\Lab4Micros.X.production.obj
+__Hconst 0 0 CONST 0 const dist/default/production\Lab4Micros.X.production.obj
+i2___lbmod@rem 4 0 COMRAM 1 cstackCOMRAM dist/default/production\Lab4Micros.X.production.obj
+__Hidata 0 0 CODE 0 idata dist/default/production\Lab4Micros.X.production.obj
+__Hidloc 200008 0 IDLOC 5 idloc dist/default/production\Lab4Micros.X.production.obj
+__Hnvbit 0 0 COMRAM 1 nvbit dist/default/production\Lab4Micros.X.production.obj
+__Hparam 0 0 COMRAM 1 rparam dist/default/production\Lab4Micros.X.production.obj
+__Hrdata 0 0 COMRAM 1 rdata dist/default/production\Lab4Micros.X.production.obj
+__Hstack 0 0 STACK 2 stack dist/default/production\Lab4Micros.X.production.obj
+__Htext0 0 0 ABS 0 text0 dist/default/production\Lab4Micros.X.production.obj
+__Htext1 0 0 ABS 0 text1 dist/default/production\Lab4Micros.X.production.obj
+__Htext2 0 0 ABS 0 text2 dist/default/production\Lab4Micros.X.production.obj
+__Htext3 0 0 ABS 0 text3 dist/default/production\Lab4Micros.X.production.obj
+__Htext4 0 0 ABS 0 text4 dist/default/production\Lab4Micros.X.production.obj
+__Htext5 0 0 ABS 0 text5 dist/default/production\Lab4Micros.X.production.obj
+__Htext6 0 0 ABS 0 text6 dist/default/production\Lab4Micros.X.production.obj
+__Htext7 0 0 ABS 0 text7 dist/default/production\Lab4Micros.X.production.obj
+__Htext8 0 0 ABS 0 text8 dist/default/production\Lab4Micros.X.production.obj
+__Htext9 0 0 ABS 0 text9 dist/default/production\Lab4Micros.X.production.obj
+i2_contador F02 0 CODE 0 text26 dist/default/production\Lab4Micros.X.production.obj
+__Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\Lab4Micros.X.production.obj
+__Hbigram 0 0 ABS 0 bigram dist/default/production\Lab4Micros.X.production.obj
+__Hbigsfr 0 0 ABS 0 bigsfr dist/default/production\Lab4Micros.X.production.obj
+__smallconst 800 0 SMALLCONST 0 smallconst C:\Users\juanr\AppData\Local\Temp\xcAsd4c.\driver_tmp_9.obj
+i2RetardoLCD@a 2 0 COMRAM 1 cstackCOMRAM dist/default/production\Lab4Micros.X.production.obj
+__Hcomram 0 0 ABS 0 comram dist/default/production\Lab4Micros.X.production.obj
+__Hconfig 30000E 0 CONFIG 4 config dist/default/production\Lab4Micros.X.production.obj
+__Lbank0 0 0 ABS 0 bank0 dist/default/production\Lab4Micros.X.production.obj
+__Lbank1 0 0 ABS 0 bank1 dist/default/production\Lab4Micros.X.production.obj
+__Lbank2 0 0 ABS 0 bank2 dist/default/production\Lab4Micros.X.production.obj
+__Lbank3 0 0 ABS 0 bank3 dist/default/production\Lab4Micros.X.production.obj
+__Lbank4 0 0 ABS 0 bank4 dist/default/production\Lab4Micros.X.production.obj
+__Lbank5 0 0 ABS 0 bank5 dist/default/production\Lab4Micros.X.production.obj
+__Lbank6 0 0 ABS 0 bank6 dist/default/production\Lab4Micros.X.production.obj
+__Lbank7 0 0 ABS 0 bank7 dist/default/production\Lab4Micros.X.production.obj
+__Lcinit 0 0 ABS 0 cinit dist/default/production\Lab4Micros.X.production.obj
+__Lconst 0 0 CONST 0 const dist/default/production\Lab4Micros.X.production.obj
+i2_EscribeLCD_c 18B2 0 CODE 0 text42 dist/default/production\Lab4Micros.X.production.obj
+__Lidata 0 0 CODE 0 idata dist/default/production\Lab4Micros.X.production.obj
+__Lidloc 0 0 IDLOC 5 idloc dist/default/production\Lab4Micros.X.production.obj
+__Lnvbit 0 0 COMRAM 1 nvbit dist/default/production\Lab4Micros.X.production.obj
+__Lparam 0 0 COMRAM 1 rparam dist/default/production\Lab4Micros.X.production.obj
+__Lrdata 0 0 COMRAM 1 rdata dist/default/production\Lab4Micros.X.production.obj
+__Lstack 0 0 STACK 2 stack dist/default/production\Lab4Micros.X.production.obj
+__Ltext0 0 0 ABS 0 text0 dist/default/production\Lab4Micros.X.production.obj
+__Ltext1 0 0 ABS 0 text1 dist/default/production\Lab4Micros.X.production.obj
+__Ltext2 0 0 ABS 0 text2 dist/default/production\Lab4Micros.X.production.obj
+__Ltext3 0 0 ABS 0 text3 dist/default/production\Lab4Micros.X.production.obj
+__Ltext4 0 0 ABS 0 text4 dist/default/production\Lab4Micros.X.production.obj
+__Ltext5 0 0 ABS 0 text5 dist/default/production\Lab4Micros.X.production.obj
+__Ltext6 0 0 ABS 0 text6 dist/default/production\Lab4Micros.X.production.obj
+__Ltext7 0 0 ABS 0 text7 dist/default/production\Lab4Micros.X.production.obj
+__Ltext8 0 0 ABS 0 text8 dist/default/production\Lab4Micros.X.production.obj
+__Ltext9 0 0 ABS 0 text9 dist/default/production\Lab4Micros.X.production.obj
+__Hfarbss 0 0 FARRAM 0 farbss dist/default/production\Lab4Micros.X.production.obj
+__Lintcode_body 0 0 ABS 0 intcode_body dist/default/production\Lab4Micros.X.production.obj
+ComandoLCD@a 1B 0 COMRAM 1 cstackCOMRAM dist/default/production\Lab4Micros.X.production.obj
+_PORTCbits F82 0 ABS 0 - dist/default/production\Lab4Micros.X.production.obj
+__Habs1 0 0 ABS 0 abs1 dist/default/production\Lab4Micros.X.production.obj
+__Hdata 0 0 ABS 0 data dist/default/production\Lab4Micros.X.production.obj
+__Hheap 0 0 HEAP 7 heap dist/default/production\Lab4Micros.X.production.obj
+__Hinit 12 0 CODE 0 init dist/default/production\Lab4Micros.X.production.obj
+__Hrbit 0 0 COMRAM 1 rbit dist/default/production\Lab4Micros.X.production.obj
+__Hrbss 0 0 COMRAM 1 rbss dist/default/production\Lab4Micros.X.production.obj
+__Htemp 46 0 COMRAM 1 temp dist/default/production\Lab4Micros.X.production.obj
+__Htext 0 0 ABS 0 text dist/default/production\Lab4Micros.X.production.obj
+__Labs1 0 0 ABS 0 abs1 dist/default/production\Lab4Micros.X.production.obj
+__Ldata 0 0 ABS 0 data dist/default/production\Lab4Micros.X.production.obj
+__Lheap 0 0 HEAP 7 heap dist/default/production\Lab4Micros.X.production.obj
+__Linit E 0 CODE 0 init dist/default/production\Lab4Micros.X.production.obj
+__Lrbit 0 0 COMRAM 1 rbit dist/default/production\Lab4Micros.X.production.obj
+__Lrbss 0 0 COMRAM 1 rbss dist/default/production\Lab4Micros.X.production.obj
+__Ltemp 45 0 COMRAM 1 temp dist/default/production\Lab4Micros.X.production.obj
+__Ltext 0 0 ABS 0 text dist/default/production\Lab4Micros.X.production.obj
+___wmul 1816 0 CODE 0 text36 dist/default/production\Lab4Micros.X.production.obj
+int$flags 45 0 COMRAM 1 temp dist/default/production\Lab4Micros.X.production.obj
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\Lab4Micros.X.production.obj
+__end_of_DireccionaLCD 189C 0 CODE 0 text11 dist/default/production\Lab4Micros.X.production.obj
+__Hintret 0 0 ABS 0 intret dist/default/production\Lab4Micros.X.production.obj
+__Hirdata 0 0 CODE 0 irdata dist/default/production\Lab4Micros.X.production.obj
+_GIE 7F97 0 ABS 0 - dist/default/production\Lab4Micros.X.production.obj
+_ISR 8 0 CODE 0 intcode dist/default/production\Lab4Micros.X.production.obj
+_RB4 7C0C 0 ABS 0 - dist/default/production\Lab4Micros.X.production.obj
+_RB5 7C0D 0 ABS 0 - dist/default/production\Lab4Micros.X.production.obj
+_RB6 7C0E 0 ABS 0 - dist/default/production\Lab4Micros.X.production.obj
+_RB7 7C0F 0 ABS 0 - dist/default/production\Lab4Micros.X.production.obj
+_RGB 116E 0 CODE 0 text5 dist/default/production\Lab4Micros.X.production.obj
+_SEG 190C 0 CODE 0 text4 dist/default/production\Lab4Micros.X.production.obj
+__S0 191E 0 ABS 0 - dist/default/production\Lab4Micros.X.production.obj
+__S1 46 0 ABS 0 - dist/default/production\Lab4Micros.X.production.obj
+__S4 0 0 ABS 0 - dist/default/production\Lab4Micros.X.production.obj
+__S5 0 0 ABS 0 - dist/default/production\Lab4Micros.X.production.obj
+_fin 15F8 0 CODE 0 text37 dist/default/production\Lab4Micros.X.production.obj
+_HabilitaLCD 18F0 0 CODE 0 text21 dist/default/production\Lab4Micros.X.production.obj
+_cuenta 32 0 COMRAM 1 bssCOMRAM dist/default/production\Lab4Micros.X.production.obj
+__end_of_CaracterCara 1342 0 CODE 0 text15 dist/default/production\Lab4Micros.X.production.obj
+i2___awdiv@quotient 7 0 COMRAM 1 cstackCOMRAM dist/default/production\Lab4Micros.X.production.obj
+EscribeLCD_n8@centena 20 0 COMRAM 1 cstackCOMRAM dist/default/production\Lab4Micros.X.production.obj
+i2EscribeLCD_c@a 5 0 COMRAM 1 cstackCOMRAM dist/default/production\Lab4Micros.X.production.obj
+__HidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/production\Lab4Micros.X.production.obj
+__Lbigdata 0 0 BIGRAM 1 bigdata dist/default/production\Lab4Micros.X.production.obj
+_BorraLCD 18C8 0 CODE 0 text18 dist/default/production\Lab4Micros.X.production.obj
+__Hnvrram 0 0 COMRAM 1 nvrram dist/default/production\Lab4Micros.X.production.obj
+i2___awmod@dividend 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Lab4Micros.X.production.obj
+__end_of_ISR 9E4 0 CODE 0 intcode_body dist/default/production\Lab4Micros.X.production.obj
+__end_of_RGB 11E6 0 CODE 0 text5 dist/default/production\Lab4Micros.X.production.obj
+__end_of_SEG 1912 0 CODE 0 text4 dist/default/production\Lab4Micros.X.production.obj
+__end_of_fin 1634 0 CODE 0 text37 dist/default/production\Lab4Micros.X.production.obj
+int_func 868 0 CODE 0 intcode_body dist/default/production\Lab4Micros.X.production.obj
+__end_ofi2_contador FCE 0 CODE 0 text26 dist/default/production\Lab4Micros.X.production.obj
+i2___lbdiv@quotient 8 0 COMRAM 1 cstackCOMRAM dist/default/production\Lab4Micros.X.production.obj
+__Lintentry 0 0 ABS 0 intentry dist/default/production\Lab4Micros.X.production.obj
+i2___awmod@counter 5 0 COMRAM 1 cstackCOMRAM dist/default/production\Lab4Micros.X.production.obj
+__end_of_BorraLCD 18DC 0 CODE 0 text18 dist/default/production\Lab4Micros.X.production.obj
+__end_ofi2_EscribeLCD_c 18C8 0 CODE 0 text42 dist/default/production\Lab4Micros.X.production.obj
+__Hramtop 800 0 RAM 0 ramtop dist/default/production\Lab4Micros.X.production.obj
+__Hrparam 0 0 COMRAM 1 rparam dist/default/production\Lab4Micros.X.production.obj
+__end_ofi2_EscribeLCD_n8 E36 0 CODE 0 text31 dist/default/production\Lab4Micros.X.production.obj
+i2_RetardoLCD 14CC 0 CODE 0 text44 dist/default/production\Lab4Micros.X.production.obj
+i2___lbmod@dividend 2 0 COMRAM 1 cstackCOMRAM dist/default/production\Lab4Micros.X.production.obj
+__activetblptr 2 0 ABS 0 - dist/default/production\Lab4Micros.X.production.obj
+__Hstruct 0 0 COMRAM 1 struct dist/default/production\Lab4Micros.X.production.obj
+__Htext10 0 0 ABS 0 text10 dist/default/production\Lab4Micros.X.production.obj
+__Htext11 0 0 ABS 0 text11 dist/default/production\Lab4Micros.X.production.obj
+__Htext12 0 0 ABS 0 text12 dist/default/production\Lab4Micros.X.production.obj
+__Htext13 0 0 ABS 0 text13 dist/default/production\Lab4Micros.X.production.obj
+__Htext14 0 0 ABS 0 text14 dist/default/production\Lab4Micros.X.production.obj
+__Htext15 0 0 ABS 0 text15 dist/default/production\Lab4Micros.X.production.obj
+__Htext16 0 0 ABS 0 text16 dist/default/production\Lab4Micros.X.production.obj
+__Htext17 0 0 ABS 0 text17 dist/default/production\Lab4Micros.X.production.obj
+__Htext18 0 0 ABS 0 text18 dist/default/production\Lab4Micros.X.production.obj
+__Htext19 0 0 ABS 0 text19 dist/default/production\Lab4Micros.X.production.obj
+__Htext20 0 0 ABS 0 text20 dist/default/production\Lab4Micros.X.production.obj
+__Htext21 0 0 ABS 0 text21 dist/default/production\Lab4Micros.X.production.obj
+__Htext23 0 0 ABS 0 text23 dist/default/production\Lab4Micros.X.production.obj
+__Htext24 0 0 ABS 0 text24 dist/default/production\Lab4Micros.X.production.obj
+__Htext25 0 0 ABS 0 text25 dist/default/production\Lab4Micros.X.production.obj
+__Htext26 0 0 ABS 0 text26 dist/default/production\Lab4Micros.X.production.obj
+__Htext27 0 0 ABS 0 text27 dist/default/production\Lab4Micros.X.production.obj
+__Htext28 0 0 ABS 0 text28 dist/default/production\Lab4Micros.X.production.obj
+__Htext29 0 0 ABS 0 text29 dist/default/production\Lab4Micros.X.production.obj
+__Htext30 0 0 ABS 0 text30 dist/default/production\Lab4Micros.X.production.obj
+__Htext31 0 0 ABS 0 text31 dist/default/production\Lab4Micros.X.production.obj
+__Htext32 0 0 ABS 0 text32 dist/default/production\Lab4Micros.X.production.obj
+__Htext33 0 0 ABS 0 text33 dist/default/production\Lab4Micros.X.production.obj
+__Htext34 0 0 ABS 0 text34 dist/default/production\Lab4Micros.X.production.obj
+__Htext35 0 0 ABS 0 text35 dist/default/production\Lab4Micros.X.production.obj
+__Htext36 0 0 ABS 0 text36 dist/default/production\Lab4Micros.X.production.obj
+__Htext37 0 0 ABS 0 text37 dist/default/production\Lab4Micros.X.production.obj
+__Htext38 0 0 ABS 0 text38 dist/default/production\Lab4Micros.X.production.obj
+__Htext39 0 0 ABS 0 text39 dist/default/production\Lab4Micros.X.production.obj
+__Htext40 0 0 ABS 0 text40 dist/default/production\Lab4Micros.X.production.obj
+__Htext41 0 0 ABS 0 text41 dist/default/production\Lab4Micros.X.production.obj
+__Htext42 0 0 ABS 0 text42 dist/default/production\Lab4Micros.X.production.obj
+__Htext43 0 0 ABS 0 text43 dist/default/production\Lab4Micros.X.production.obj
+__Htext44 0 0 ABS 0 text44 dist/default/production\Lab4Micros.X.production.obj
+__Htext45 0 0 ABS 0 text45 dist/default/production\Lab4Micros.X.production.obj
+___awmod@counter 1B 0 COMRAM 1 cstackCOMRAM dist/default/production\Lab4Micros.X.production.obj
+escribirDig@lectura 6 0 COMRAM 1 cstackCOMRAM dist/default/production\Lab4Micros.X.production.obj
+i2___lbdiv@divisor 5 0 COMRAM 1 cstackCOMRAM dist/default/production\Lab4Micros.X.production.obj
+__ptext10 166C 0 CODE 0 text10 dist/default/production\Lab4Micros.X.production.obj
+__ptext11 1886 0 CODE 0 text11 dist/default/production\Lab4Micros.X.production.obj
+__ptext12 FCE 0 CODE 0 text12 dist/default/production\Lab4Micros.X.production.obj
+__ptext13 1858 0 CODE 0 text13 dist/default/production\Lab4Micros.X.production.obj
+__ptext14 125E 0 CODE 0 text14 dist/default/production\Lab4Micros.X.production.obj
+__ptext15 12D0 0 CODE 0 text15 dist/default/production\Lab4Micros.X.production.obj
+__ptext16 1744 0 CODE 0 text16 dist/default/production\Lab4Micros.X.production.obj
+__ptext17 191C 0 CODE 0 text17 dist/default/production\Lab4Micros.X.production.obj
+__ptext18 18C8 0 CODE 0 text18 dist/default/production\Lab4Micros.X.production.obj
+__ptext19 156C 0 CODE 0 text19 dist/default/production\Lab4Micros.X.production.obj
+__ptext20 1476 0 CODE 0 text20 dist/default/production\Lab4Micros.X.production.obj
+__ptext21 18F0 0 CODE 0 text21 dist/default/production\Lab4Micros.X.production.obj
+__ptext23 141E 0 CODE 0 text23 dist/default/production\Lab4Micros.X.production.obj
+__ptext24 183C 0 CODE 0 text24 dist/default/production\Lab4Micros.X.production.obj
+__ptext25 B3E 0 CODE 0 text25 dist/default/production\Lab4Micros.X.production.obj
+__ptext26 F02 0 CODE 0 text26 dist/default/production\Lab4Micros.X.production.obj
+__ptext27 13B0 0 CODE 0 text27 dist/default/production\Lab4Micros.X.production.obj
+__ptext28 10EC 0 CODE 0 text28 dist/default/production\Lab4Micros.X.production.obj
+__ptext29 1912 0 CODE 0 text29 dist/default/production\Lab4Micros.X.production.obj
+__ptext30 11E6 0 CODE 0 text30 dist/default/production\Lab4Micros.X.production.obj
+__ptext31 D50 0 CODE 0 text31 dist/default/production\Lab4Micros.X.production.obj
+__ptext32 17C6 0 CODE 0 text32 dist/default/production\Lab4Micros.X.production.obj
+__ptext33 16A4 0 CODE 0 text33 dist/default/production\Lab4Micros.X.production.obj
+__ptext34 16DC 0 CODE 0 text34 dist/default/production\Lab4Micros.X.production.obj
+__ptext35 1710 0 CODE 0 text35 dist/default/production\Lab4Micros.X.production.obj
+__ptext36 1816 0 CODE 0 text36 dist/default/production\Lab4Micros.X.production.obj
+__ptext37 15F8 0 CODE 0 text37 dist/default/production\Lab4Micros.X.production.obj
+__ptext38 17EE 0 CODE 0 text38 dist/default/production\Lab4Micros.X.production.obj
+__ptext39 189C 0 CODE 0 text39 dist/default/production\Lab4Micros.X.production.obj
+__ptext40 18DC 0 CODE 0 text40 dist/default/production\Lab4Micros.X.production.obj
+__ptext41 1522 0 CODE 0 text41 dist/default/production\Lab4Micros.X.production.obj
+__ptext42 18B2 0 CODE 0 text42 dist/default/production\Lab4Micros.X.production.obj
+__ptext43 15B2 0 CODE 0 text43 dist/default/production\Lab4Micros.X.production.obj
+__ptext44 14CC 0 CODE 0 text44 dist/default/production\Lab4Micros.X.production.obj
+__ptext45 18FE 0 CODE 0 text45 dist/default/production\Lab4Micros.X.production.obj
+___awdiv 106A 0 CODE 0 text3 dist/default/production\Lab4Micros.X.production.obj
+___awmod 1342 0 CODE 0 text2 dist/default/production\Lab4Micros.X.production.obj
+__end_of_CursorAInicio 191E 0 CODE 0 text17 dist/default/production\Lab4Micros.X.production.obj
+___lbdiv 166C 0 CODE 0 text10 dist/default/production\Lab4Micros.X.production.obj
+___lbmod 179E 0 CODE 0 text9 dist/default/production\Lab4Micros.X.production.obj
+__pintcode_body 868 0 CODE 0 intcode_body dist/default/production\Lab4Micros.X.production.obj
+__Lbigbss 0 0 BIGRAM 1 bigbss dist/default/production\Lab4Micros.X.production.obj
+__Lbigram 0 0 ABS 0 bigram dist/default/production\Lab4Micros.X.production.obj
+__Lbigsfr 0 0 ABS 0 bigsfr dist/default/production\Lab4Micros.X.production.obj
+_borrarTexto 16DC 0 CODE 0 text34 dist/default/production\Lab4Micros.X.production.obj
+_flagEmergencia 38 0 COMRAM 1 bssCOMRAM dist/default/production\Lab4Micros.X.production.obj
+i2EnviaDato@a 4 0 COMRAM 1 cstackCOMRAM dist/default/production\Lab4Micros.X.production.obj
+__Lcomram 0 0 ABS 0 comram dist/default/production\Lab4Micros.X.production.obj
+__Lconfig 0 0 CONFIG 4 config dist/default/production\Lab4Micros.X.production.obj
+_ConfiguraLCD 1858 0 CODE 0 text13 dist/default/production\Lab4Micros.X.production.obj
+___wmul@multiplier 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Lab4Micros.X.production.obj
+___lbdiv@divisor 1B 0 COMRAM 1 cstackCOMRAM dist/default/production\Lab4Micros.X.production.obj
+__Lsivt_hi 0 0 ABS 0 sivt_hi dist/default/production\Lab4Micros.X.production.obj
+__Lsivt_lo 0 0 ABS 0 sivt_lo dist/default/production\Lab4Micros.X.production.obj
+_reiCon 141E 0 CODE 0 text23 dist/default/production\Lab4Micros.X.production.obj
+__Lfarbss 0 0 FARRAM 0 farbss dist/default/production\Lab4Micros.X.production.obj
+___inthi_stack_hi 0 0 STACK 2 stack C:\Users\juanr\AppData\Local\Temp\xcAsd4c.\driver_tmp_9.obj
+___inthi_stack_lo 0 0 STACK 2 stack C:\Users\juanr\AppData\Local\Temp\xcAsd4c.\driver_tmp_9.obj
+__Lfardata 0 0 FARRAM 0 fardata dist/default/production\Lab4Micros.X.production.obj
+isa$std 1 0 ABS 0 - C:\Users\juanr\AppData\Local\Temp\xcAsd4c.\driver_tmp_9.obj
+stackhi 0 0 ABS 0 - C:\Users\juanr\AppData\Local\Temp\xcAsd4c.\driver_tmp_9.obj
+stacklo 0 0 ABS 0 - C:\Users\juanr\AppData\Local\Temp\xcAsd4c.\driver_tmp_9.obj
+__end_ofi2_DireccionaLCD 18B2 0 CODE 0 text39 dist/default/production\Lab4Micros.X.production.obj
+__Lintcode 8 0 CODE 0 intcode dist/default/production\Lab4Micros.X.production.obj
+i2_EscribeLCD_n8 D50 0 CODE 0 text31 dist/default/production\Lab4Micros.X.production.obj
+__Lintret 0 0 ABS 0 intret dist/default/production\Lab4Micros.X.production.obj
+__Lirdata 0 0 CODE 0 irdata dist/default/production\Lab4Micros.X.production.obj
+EscribeLCD_n8@decena 21 0 COMRAM 1 cstackCOMRAM dist/default/production\Lab4Micros.X.production.obj
+_escribirDig 1522 0 CODE 0 text41 dist/default/production\Lab4Micros.X.production.obj
+_flagCont 34 0 COMRAM 1 bssCOMRAM dist/default/production\Lab4Micros.X.production.obj
+__end_ofi2___awdiv 116E 0 CODE 0 text28 dist/default/production\Lab4Micros.X.production.obj
+__end_ofi2___awmod 141E 0 CODE 0 text27 dist/default/production\Lab4Micros.X.production.obj
+__end_ofi2___lbdiv 16DC 0 CODE 0 text33 dist/default/production\Lab4Micros.X.production.obj
+__end_ofi2___lbmod 17EE 0 CODE 0 text32 dist/default/production\Lab4Micros.X.production.obj
+__Lspace_0 0 0 ABS 0 - dist/default/production\Lab4Micros.X.production.obj
+__Lspace_1 0 0 ABS 0 - dist/default/production\Lab4Micros.X.production.obj
+__Lspace_2 0 0 ABS 0 - dist/default/production\Lab4Micros.X.production.obj
+__Lspace_4 0 0 ABS 0 - dist/default/production\Lab4Micros.X.production.obj
+__pbssCOMRAM 26 0 COMRAM 1 bssCOMRAM dist/default/production\Lab4Micros.X.production.obj
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\Lab4Micros.X.production.obj
+_MensajeLCD_Var 1776 0 CODE 0 text6 dist/default/production\Lab4Micros.X.production.obj
+_InicializaLCD FCE 0 CODE 0 text12 dist/default/production\Lab4Micros.X.production.obj
+end_of_initialization 165E 0 CODE 0 cinit dist/default/production\Lab4Micros.X.production.obj
+_EscribeLCD_c 1870 0 CODE 0 text7 dist/default/production\Lab4Micros.X.production.obj
+__end_ofi2_RetardoLCD 1522 0 CODE 0 text44 dist/default/production\Lab4Micros.X.production.obj
+__Lnvrram 0 0 COMRAM 1 nvrram dist/default/production\Lab4Micros.X.production.obj
+__Hintentry 0 0 ABS 0 intentry dist/default/production\Lab4Micros.X.production.obj
+___awdiv@quotient 1D 0 COMRAM 1 cstackCOMRAM dist/default/production\Lab4Micros.X.production.obj
+?___awdiv 17 0 COMRAM 1 cstackCOMRAM dist/default/production\Lab4Micros.X.production.obj
+?___awmod 17 0 COMRAM 1 cstackCOMRAM dist/default/production\Lab4Micros.X.production.obj
+i2DireccionaLCD@a 5 0 COMRAM 1 cstackCOMRAM dist/default/production\Lab4Micros.X.production.obj
+__end_ofi2_EnviaDato 15F8 0 CODE 0 text43 dist/default/production\Lab4Micros.X.production.obj
+i2___awdiv 10EC 0 CODE 0 text28 dist/default/production\Lab4Micros.X.production.obj
+i2___awmod 13B0 0 CODE 0 text27 dist/default/production\Lab4Micros.X.production.obj
+i2___lbdiv 16A4 0 CODE 0 text33 dist/default/production\Lab4Micros.X.production.obj
+i2___lbmod 17C6 0 CODE 0 text32 dist/default/production\Lab4Micros.X.production.obj
+__Hreset_vec 4 0 CODE 0 reset_vec dist/default/production\Lab4Micros.X.production.obj
+_parEmerg 183C 0 CODE 0 text24 dist/default/production\Lab4Micros.X.production.obj
+___awmod@dividend 17 0 COMRAM 1 cstackCOMRAM dist/default/production\Lab4Micros.X.production.obj
+__Lramtop 800 0 RAM 0 ramtop dist/default/production\Lab4Micros.X.production.obj
+_ComandoLCD 1744 0 CODE 0 text16 dist/default/production\Lab4Micros.X.production.obj
+__Lrparam 0 0 COMRAM 1 rparam dist/default/production\Lab4Micros.X.production.obj
+__pcinit 1634 0 CODE 0 cinit dist/default/production\Lab4Micros.X.production.obj
+__ptext0 9E4 0 CODE 0 text0 dist/default/production\Lab4Micros.X.production.obj
+__ptext1 E36 0 CODE 0 text1 dist/default/production\Lab4Micros.X.production.obj
+__ptext2 1342 0 CODE 0 text2 dist/default/production\Lab4Micros.X.production.obj
+__ptext3 106A 0 CODE 0 text3 dist/default/production\Lab4Micros.X.production.obj
+__ptext4 190C 0 CODE 0 text4 dist/default/production\Lab4Micros.X.production.obj
+__ptext5 116E 0 CODE 0 text5 dist/default/production\Lab4Micros.X.production.obj
+__ptext6 1776 0 CODE 0 text6 dist/default/production\Lab4Micros.X.production.obj
+__ptext7 1870 0 CODE 0 text7 dist/default/production\Lab4Micros.X.production.obj
+__ptext8 C6A 0 CODE 0 text8 dist/default/production\Lab4Micros.X.production.obj
+__ptext9 179E 0 CODE 0 text9 dist/default/production\Lab4Micros.X.production.obj
+___lbdiv@quotient 1E 0 COMRAM 1 cstackCOMRAM dist/default/production\Lab4Micros.X.production.obj
+__Lstruct 0 0 COMRAM 1 struct dist/default/production\Lab4Micros.X.production.obj
+__Ltext10 0 0 ABS 0 text10 dist/default/production\Lab4Micros.X.production.obj
+__Ltext11 0 0 ABS 0 text11 dist/default/production\Lab4Micros.X.production.obj
+__Ltext12 0 0 ABS 0 text12 dist/default/production\Lab4Micros.X.production.obj
+__Ltext13 0 0 ABS 0 text13 dist/default/production\Lab4Micros.X.production.obj
+__Ltext14 0 0 ABS 0 text14 dist/default/production\Lab4Micros.X.production.obj
+__Ltext15 0 0 ABS 0 text15 dist/default/production\Lab4Micros.X.production.obj
+__Ltext16 0 0 ABS 0 text16 dist/default/production\Lab4Micros.X.production.obj
+__Ltext17 0 0 ABS 0 text17 dist/default/production\Lab4Micros.X.production.obj
+__Ltext18 0 0 ABS 0 text18 dist/default/production\Lab4Micros.X.production.obj
+__Ltext19 0 0 ABS 0 text19 dist/default/production\Lab4Micros.X.production.obj
+__Ltext20 0 0 ABS 0 text20 dist/default/production\Lab4Micros.X.production.obj
+__Ltext21 0 0 ABS 0 text21 dist/default/production\Lab4Micros.X.production.obj
+__Ltext23 0 0 ABS 0 text23 dist/default/production\Lab4Micros.X.production.obj
+__Ltext24 0 0 ABS 0 text24 dist/default/production\Lab4Micros.X.production.obj
+__Ltext25 0 0 ABS 0 text25 dist/default/production\Lab4Micros.X.production.obj
+__Ltext26 0 0 ABS 0 text26 dist/default/production\Lab4Micros.X.production.obj
+__Ltext27 0 0 ABS 0 text27 dist/default/production\Lab4Micros.X.production.obj
+__Ltext28 0 0 ABS 0 text28 dist/default/production\Lab4Micros.X.production.obj
+__Ltext29 0 0 ABS 0 text29 dist/default/production\Lab4Micros.X.production.obj
+__Ltext30 0 0 ABS 0 text30 dist/default/production\Lab4Micros.X.production.obj
+__Ltext31 0 0 ABS 0 text31 dist/default/production\Lab4Micros.X.production.obj
+__Ltext32 0 0 ABS 0 text32 dist/default/production\Lab4Micros.X.production.obj
+__Ltext33 0 0 ABS 0 text33 dist/default/production\Lab4Micros.X.production.obj
+__Ltext34 0 0 ABS 0 text34 dist/default/production\Lab4Micros.X.production.obj
+__Ltext35 0 0 ABS 0 text35 dist/default/production\Lab4Micros.X.production.obj
+__Ltext36 0 0 ABS 0 text36 dist/default/production\Lab4Micros.X.production.obj
+__Ltext37 0 0 ABS 0 text37 dist/default/production\Lab4Micros.X.production.obj
+__Ltext38 0 0 ABS 0 text38 dist/default/production\Lab4Micros.X.production.obj
+__Ltext39 0 0 ABS 0 text39 dist/default/production\Lab4Micros.X.production.obj
+__Ltext40 0 0 ABS 0 text40 dist/default/production\Lab4Micros.X.production.obj
+__Ltext41 0 0 ABS 0 text41 dist/default/production\Lab4Micros.X.production.obj
+__Ltext42 0 0 ABS 0 text42 dist/default/production\Lab4Micros.X.production.obj
+__Ltext43 0 0 ABS 0 text43 dist/default/production\Lab4Micros.X.production.obj
+__Ltext44 0 0 ABS 0 text44 dist/default/production\Lab4Micros.X.production.obj
+__Ltext45 0 0 ABS 0 text45 dist/default/production\Lab4Micros.X.production.obj
+__ramtop 800 0 RAM 0 ramtop C:\Users\juanr\AppData\Local\Temp\xcAsd4c.\driver_tmp_9.obj
+__end_of_parEmerg 1858 0 CODE 0 text24 dist/default/production\Lab4Micros.X.production.obj
+i2_DireccionaLCD 189C 0 CODE 0 text39 dist/default/production\Lab4Micros.X.production.obj
+__end_of_ConfiguraLCD 1870 0 CODE 0 text13 dist/default/production\Lab4Micros.X.production.obj
+___lbmod@dividend 18 0 COMRAM 1 cstackCOMRAM dist/default/production\Lab4Micros.X.production.obj
+__Lpowerup E 0 CODE 0 powerup dist/default/production\Lab4Micros.X.production.obj
+__Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\Lab4Micros.X.production.obj
+i2___awmod@divisor 3 0 COMRAM 1 cstackCOMRAM dist/default/production\Lab4Micros.X.production.obj
+__H__absolute__ 0 0 ABS 0 __absolute__ dist/default/production\Lab4Micros.X.production.obj
+_CaracterQbert 125E 0 CODE 0 text14 dist/default/production\Lab4Micros.X.production.obj
+__psmallconst 800 0 SMALLCONST 0 smallconst dist/default/production\Lab4Micros.X.production.obj
+__Lreset_vec 0 0 CODE 0 reset_vec dist/default/production\Lab4Micros.X.production.obj
+ConfiguraLCD@a 17 0 COMRAM 1 cstackCOMRAM dist/default/production\Lab4Micros.X.production.obj
+i2___awmod@sign 6 0 COMRAM 1 cstackCOMRAM dist/default/production\Lab4Micros.X.production.obj
+___heap_hi 0 0 ABS 0 - C:\Users\juanr\AppData\Local\Temp\xcAsd4c.\driver_tmp_9.obj
+___heap_lo 0 0 ABS 0 - C:\Users\juanr\AppData\Local\Temp\xcAsd4c.\driver_tmp_9.obj
+___param_bank 0 0 ABS 0 - dist/default/production\Lab4Micros.X.production.obj
+___intlo_stack_hi 0 0 STACK 2 stack C:\Users\juanr\AppData\Local\Temp\xcAsd4c.\driver_tmp_9.obj
+___intlo_stack_lo 0 0 STACK 2 stack C:\Users\juanr\AppData\Local\Temp\xcAsd4c.\driver_tmp_9.obj
+__Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production\Lab4Micros.X.production.obj
+_flagDig 3C 0 COMRAM 1 bssCOMRAM dist/default/production\Lab4Micros.X.production.obj
+_flagFin 36 0 COMRAM 1 bssCOMRAM dist/default/production\Lab4Micros.X.production.obj
+_flagLuz 42 0 COMRAM 1 dataCOMRAM dist/default/production\Lab4Micros.X.production.obj
+__end_of__initialization 165E 0 CODE 0 cinit dist/default/production\Lab4Micros.X.production.obj
+___awmod@divisor 19 0 COMRAM 1 cstackCOMRAM dist/default/production\Lab4Micros.X.production.obj
+__end_of_MensajeLCD_Var 179E 0 CODE 0 text6 dist/default/production\Lab4Micros.X.production.obj
+__Libigdata 0 0 CODE 0 ibigdata dist/default/production\Lab4Micros.X.production.obj
+EscribeLCD_n8@unidad 22 0 COMRAM 1 cstackCOMRAM dist/default/production\Lab4Micros.X.production.obj
+EscribeLCD_n8@a 23 0 COMRAM 1 cstackCOMRAM dist/default/production\Lab4Micros.X.production.obj
+EscribeLCD_n8@b 1F 0 COMRAM 1 cstackCOMRAM dist/default/production\Lab4Micros.X.production.obj
+i2EscribeLCD_n8@centena A 0 COMRAM 1 cstackCOMRAM dist/default/production\Lab4Micros.X.production.obj
+__Lclrtext 0 0 ABS 0 clrtext dist/default/production\Lab4Micros.X.production.obj
+__pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Lab4Micros.X.production.obj
+i2___awdiv@sign 6 0 COMRAM 1 cstackCOMRAM dist/default/production\Lab4Micros.X.production.obj
+__end_of_EscribeLCD_c 1886 0 CODE 0 text7 dist/default/production\Lab4Micros.X.production.obj
+__end_of_ComandoLCD 1776 0 CODE 0 text16 dist/default/production\Lab4Micros.X.production.obj
+___lbmod@rem 1A 0 COMRAM 1 cstackCOMRAM dist/default/production\Lab4Micros.X.production.obj
+__end_of_main B3E 0 CODE 0 text0 dist/default/production\Lab4Micros.X.production.obj
+__pintcode 8 0 CODE 0 intcode dist/default/production\Lab4Micros.X.production.obj
+__end_of_HabilitaLCD 18FE 0 CODE 0 text21 dist/default/production\Lab4Micros.X.production.obj
+_LATA1 7C49 0 ABS 0 - dist/default/production\Lab4Micros.X.production.obj
+_LATA3 7C4B 0 ABS 0 - dist/default/production\Lab4Micros.X.production.obj
+_LATA4 7C4C 0 ABS 0 - dist/default/production\Lab4Micros.X.production.obj
+_LATA5 7C4D 0 ABS 0 - dist/default/production\Lab4Micros.X.production.obj
+_LATD1 7C61 0 ABS 0 - dist/default/production\Lab4Micros.X.production.obj
+_LATE0 7C68 0 ABS 0 - dist/default/production\Lab4Micros.X.production.obj
+_LATE1 7C69 0 ABS 0 - dist/default/production\Lab4Micros.X.production.obj
+_LATE2 7C6A 0 ABS 0 - dist/default/production\Lab4Micros.X.production.obj
+_PORTB F81 0 ABS 0 - dist/default/production\Lab4Micros.X.production.obj
+_T0CON FD5 0 ABS 0 - dist/default/production\Lab4Micros.X.production.obj
+_TRISA F92 0 ABS 0 - dist/default/production\Lab4Micros.X.production.obj
+_TRISB F93 0 ABS 0 - dist/default/production\Lab4Micros.X.production.obj
+_TRISD F95 0 ABS 0 - dist/default/production\Lab4Micros.X.production.obj
+RetardoLCD@a 18 0 COMRAM 1 cstackCOMRAM dist/default/production\Lab4Micros.X.production.obj
+_Tecla 41 0 COMRAM 1 bssCOMRAM dist/default/production\Lab4Micros.X.production.obj
+__HRAM 0 0 ABS 0 - dist/default/production\Lab4Micros.X.production.obj
+__Hbss 0 0 RAM 1 bss dist/default/production\Lab4Micros.X.production.obj
+__Hram 0 0 ABS 0 ram dist/default/production\Lab4Micros.X.production.obj
+__Hsfr 0 0 ABS 0 sfr dist/default/production\Lab4Micros.X.production.obj
+__LRAM 1 0 ABS 0 - dist/default/production\Lab4Micros.X.production.obj
+__Lbss 0 0 RAM 1 bss dist/default/production\Lab4Micros.X.production.obj
+__Lram 0 0 ABS 0 ram dist/default/production\Lab4Micros.X.production.obj
+__Lsfr 0 0 ABS 0 sfr dist/default/production\Lab4Micros.X.production.obj
+EscribeLCD_c@a 1B 0 COMRAM 1 cstackCOMRAM dist/default/production\Lab4Micros.X.production.obj
+_RetardoLCD 1476 0 CODE 0 text20 dist/default/production\Lab4Micros.X.production.obj
+_contador E36 0 CODE 0 text1 dist/default/production\Lab4Micros.X.production.obj
+i2___lbmod@counter 3 0 COMRAM 1 cstackCOMRAM dist/default/production\Lab4Micros.X.production.obj
+__Hsivt_hi 0 0 ABS 0 sivt_hi dist/default/production\Lab4Micros.X.production.obj
+__Hsivt_lo 0 0 ABS 0 sivt_lo dist/default/production\Lab4Micros.X.production.obj
+__initialization 1634 0 CODE 0 cinit dist/default/production\Lab4Micros.X.production.obj
+__pdataCOMRAM 42 0 COMRAM 1 dataCOMRAM dist/default/production\Lab4Micros.X.production.obj
+i2___awdiv@counter 5 0 COMRAM 1 cstackCOMRAM dist/default/production\Lab4Micros.X.production.obj
+__Hfardata 0 0 FARRAM 0 fardata dist/default/production\Lab4Micros.X.production.obj
+___wmul@product 5 0 COMRAM 1 cstackCOMRAM dist/default/production\Lab4Micros.X.production.obj
+__Hsmallconst 868 0 SMALLCONST 0 smallconst dist/default/production\Lab4Micros.X.production.obj
+i2___awdiv@dividend 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Lab4Micros.X.production.obj
+__end_of_contador F02 0 CODE 0 text1 dist/default/production\Lab4Micros.X.production.obj
+__Lifardata 0 0 CODE 0 ifardata dist/default/production\Lab4Micros.X.production.obj
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\Lab4Micros.X.production.obj
+___lbmod@counter 19 0 COMRAM 1 cstackCOMRAM dist/default/production\Lab4Micros.X.production.obj
+__Hintcode E 0 CODE 0 intcode dist/default/production\Lab4Micros.X.production.obj
+i2_BorraLCD 18DC 0 CODE 0 text40 dist/default/production\Lab4Micros.X.production.obj
+__end_ofi2_RGB 125E 0 CODE 0 text30 dist/default/production\Lab4Micros.X.production.obj
+__end_ofi2_SEG 1918 0 CODE 0 text29 dist/default/production\Lab4Micros.X.production.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+intcode_body 0 868 868 10B3 1
+text17 0 191C 191C 2 1
+cstackCOMRAM 1 1 1 45 1
+reset_vec 0 0 0 4 1
+intcode 0 8 8 A 1
+smallconst 0 800 800 68 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
